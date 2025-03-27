@@ -1,2 +1,2 @@
-# githubessentials
-GitHub Essentials- Lynda.com
+# API Documentation Samples
+
