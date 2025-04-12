@@ -66,85 +66,78 @@ export default function Home() {
 
        </div>
 {/* Left Column moved second (was first) */}
-<div style={{ flex: '0 0 30%', textAlign: 'center', padding: '0', borderRadius: '8px', color: '#222222' }}>
+<div style={{ flex: '0 0 30%', textAlign: 'center', padding: '0', color: '#222222' }}>
 
+  {/* Top Black Header */}
+  <div
+    style={{
+      backgroundColor: '#111111',
+      padding: '25px',
+      borderRadius: '12px 12px 0 0',
+      border: '1px solid #f9f7f2',
+      display: 'flex',
+      flexDirection: 'column',
+      justifyContent: 'center',
+      alignItems: 'center',
+      minHeight: '120px',
+      boxShadow: '0 0px 0px rgba(0, 0, 0, 0.1)'
+    }}
+  >
+    <h2 style={{ margin: '0', color: '#ffffff' }}>What We Offer</h2>
+  </div>
 
-         <div
-           style={{
-             backgroundColor: '#111111', // Light cream background
-             padding: '25px',
-             borderRadius: '12px 12px 0 0',
-             border: '1px solid #f9f7f2',
-             display: 'flex',
-             flexDirection: 'column',
-             justifyContent: 'center',
-             alignItems: 'center',
-             minHeight: '120px',
-             boxShadow: '0 0px 0px rgba(0, 0, 0, 0.1)'
-           }}
-         >
-<h2 style={{ margin: '0', color: '#ffffff' }}>Why Stablecoins?</h2>
-  <div style={{ lineHeight: '1.2', marginTop: '0px', color: '#000' }}>
+  {/* White Middle Content */}
+  <div
+    style={{
+      backgroundColor: '#f9f7f2',
+      borderLeft: '1px solid #f9f7f2',
+      borderRight: '1px solid #f9f7f2',
+      padding: '20px'
+    }}
+  >
+    <div style={{ marginTop: '0px', fontSize: '1.1rem', lineHeight: '1.5', opacity: 0.9 }}>
+      <p style={{
+        lineHeight: '1.6',
+        maxWidth: '90%',
+        margin: '0 auto'
+      }}>
+        Stablecraft helps you accept stablecoin payments—without the technical stress. We’ll handle wallet setup, gateway integration, and compliance.
+      </p>
+    </div>
 
-           </div>
-         </div>
+    {/* Bullet List */}
+    <div style={{ marginTop: '30px', marginBottom: '15px',paddingLeft: '30px', textAlign: 'left' }}>
+      <div style={{ marginBottom: '0.6rem' }}><strong>✅ Cut fees to near zero</strong></div>
+      <div style={{ marginBottom: '0.6rem' }}><strong>🌐 Go global in minutes</strong></div>
+      <div style={{ marginBottom: '0.6rem' }}><strong>🤝 Earn customer trust</strong></div>
+      <div><strong>🛡 Stay stress-free and compliant</strong></div>
+    </div>
+  </div>
 
+  {/* Full-width Black Footer */}
+  <div
+    style={{
+      backgroundColor: '#111',
+      color: '#F5F5F5',
+      textAlign: 'center',
+      padding: '1rem',
+      borderRadius: '0 0 12px 12px',
+      border: '1px solid #f9f7f2',
+      borderTop: 'none' // removes double border where black meets white
+    }}
+  >
+    <p style={{ margin: 0, marginTop: '0rem', fontStyle: 'italic' }}>
+      Let’s make payments simple
+    </p>
+    <p style={{ margin: '0.5rem 0 0 0', fontSize: '0.9rem', lineHeight: '1.8' }}>
+      <a href="mailto:john@stablecraft.io" style={{ color: '#F5F5F5', textDecoration: 'underline' }}>
+        john@stablecraft.io
+      </a><br />
+      616.745.2985
 
-         {/* Bottom Half with Original White Background */}
-         <div style={{ backgroundColor: '#f9f7f2', border: '1px solid #f9f7f2',padding: '20px', borderRadius: '0 0 8px 8px' }}>
-           {/* Connect Section */}
-           <div style={{ marginTop: '0px', fontSize: '1.1rem',
-lineHeight: '1.5',
-opacity: 0.9
-
-
-           }}>
-<p style={{
-  lineHeight: '1.6',
-  maxWidth: '90%',
-  margin: '0 auto',
-}}>
-  Stablecraft can help businesses like yours adopt stablecoin payments without the headaches.
-</p>
-<p style={{
-  lineHeight: '1.6',
-  maxWidth: '90%',
-  margin: '1rem auto',
-}}>
-  From wallet setup to payment gateway integration, we’ll get you up and running fast.
-</p>
-
-
-           </div>
-           {/* Recommendation Video Link */}
-           <div style={{ marginTop: '20px',   marginLeft: '20px', justifyContent: 'left' }}>
-           <p><strong>✅ Save Big on Fees</strong></p>
-<p><strong>🌐 Go Global, Instantly</strong></p>
-<p><strong>🤝 Build Customer Trust</strong></p>
-<p><strong>🛡 Stay Compliant, Stress-Free</strong></p>
-
-
-
-           </div>
-                   {/* Connect Section */}
-                   <div style={{ marginTop: '50px' }}>
-              <h5 style={{ margin: '0px 0 5px' }}>The Smartest Payment Decision You'll Ever Make
-            </h5>
-            <h5 style={{ margin: '0px 0 5px' }}>
-            </h5>
-            <h5 style={{ margin: '0px 0 5px' }}>
-
-            </h5>
-             <h6 style={{ margin: '20px 0 5px' }}>
-               <a href="mailto:john@stablecraftconsulting.com" style={{ color: '#222222', textDecoration: 'none' }}>john@stablecraft.io</a>
-             </h6>
-             <h6 style={{ margin: '5px 0 5px' }}>
-               <a href="tel:+16167452985" style={{ color: '#222222', textDecoration: 'none' }}>616.745.2985</a>
-             </h6>
-           </div>
-         </div>
-       </div>
-
+    </p>
+  </div>
+</div>
              </main>
    </Layout>
  );
