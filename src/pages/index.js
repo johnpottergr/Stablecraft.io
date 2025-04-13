@@ -20,7 +20,7 @@ export default function Home() {
   paddingBottom: '6px',
   marginTop: '3rem',
   marginBottom: '0rem',
-  color: '#F5F5F5',
+  color: '#5ED1A5',
 }}>STABLECRAFT</h1>
  {/* Subheading added here */}
  <div style={{
@@ -29,7 +29,7 @@ export default function Home() {
         fontStyle: 'italic',              // Makes it italic
         marginBottom: '1.5rem',           // Adds space between subtitle and border
         paddingBottom: '0.5rem',          // Optional: extra breathing room
-        borderBottom: '1px solid #C0C0C0' // Keep or adjust as needed
+        borderBottom: '1px solid #5ED1A5' // Keep or adjust as needed
       }}>
         Stablecoin Payments for Real Businesses
       </div>
@@ -47,7 +47,7 @@ export default function Home() {
     marginTop: '0.5rem',
     marginBottom: '1.25rem',
     padding: '10px 20px',
-    backgroundColor: '#dddddd',
+    backgroundColor: '#5ED1A5',
     color: '#1A202C',
     fontWeight: 'bold',
     borderRadius: '6px',
@@ -83,16 +83,18 @@ export default function Home() {
       boxShadow: '0 0px 0px rgba(0, 0, 0, 0.1)'
     }}
   >
-    <h2 style={{ margin: '0', color: '#ffffff' }}>What We Offer</h2>
+    <h2 style={{ margin: '0', color: '#5ED1A5' }}>What We Offer</h2>
   </div>
 
   {/* White Middle Content */}
   <div
     style={{
-      backgroundColor: '#f9f7f2',
+      backgroundColor: '#111',
       borderLeft: '1px solid #f9f7f2',
       borderRight: '1px solid #f9f7f2',
-      padding: '20px'
+      borderBottom: '1px solid #f9f7f2',
+      padding: '20px',
+      color: '#f5f5f5',
     }}
   >
     <div style={{ marginTop: '0px', fontSize: '1.1rem', lineHeight: '1.5', opacity: 0.9 }}>
@@ -126,7 +128,7 @@ export default function Home() {
       borderTop: 'none' // removes double border where black meets white
     }}
   >
-    <p style={{ margin: 0, marginTop: '0rem', fontStyle: 'italic' }}>
+    <p style={{ margin: 0, marginTop: '0rem', color:'#5ED1A5', fontStyle: 'italic' }}>
       Let’s make payments simple
     </p>
     <p style={{ margin: '0.5rem 0 0 0', fontSize: '0.9rem', lineHeight: '1.8' }}>
