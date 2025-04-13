@@ -44,6 +44,7 @@
         /** @type {import('@docusaurus/preset-classic').Options} */
         ({
           docs: {
+            routeBasePath: '/', // 👈 This is the key line to add/change
             sidebarPath: './sidebars.js',
             // Update this to your repo
             editUrl: 'https://github.com/johnpottergr',
@@ -74,7 +75,7 @@
       ({
         colorMode: {
           defaultMode: 'dark',
-          disableSwitch: true, // Enable the toggle
+          disableSwitch: false, // Enable the toggle
           respectPrefersColorScheme: false, // Optional: sync with user's system theme
         },
         // Replace with your project's social card

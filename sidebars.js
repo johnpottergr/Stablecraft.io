@@ -31,5 +31,29 @@ const sidebars = {
   ],
    */
 };
+module.exports = {
+  kbSidebar: [
+    {
+      type: 'category',
+      label: 'Introduction to Stablecoins',
+      collapsed: false,
+      items: [
+        'intro/what-is-a-stablecoin',
+        'intro/stablecoins-vs-fiat',
+        'intro/types-of-stablecoins',
+        'intro/hello-stable-world',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Quick Guide',
+      items: [
+        'quick-guide/getting-started',
+        'quick-guide/wallet-setup',
+        'quick-guide/accepting-payments',
+      ],
+    },
+    // add more categories as needed
+  ],
+};
 
-export default sidebars;
