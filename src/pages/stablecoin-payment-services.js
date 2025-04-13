@@ -4,16 +4,16 @@ import Layout from '@theme/Layout';
 export default function Stablecoinpaymentservices() {
   return (
     <Layout title="Services">
-      <div style={{ padding: '20px', maxWidth: '830px', margin: '0 auto', color: '#F5F5F5' }}>
-        <h1 style={{ color: '#5ED1A5' }}>Payment Services</h1>
+      <div style={{ padding: '20px', maxWidth: '830px', margin: '0 auto', color: '#111' }}>
+        <h1 style={{ color: '#36A77A' }}>Payment Services</h1>
 
         <div style={{
         fontSize: '1.25rem',
-        color: '#DDDDDD',
+        color: '#111',
         fontStyle: 'italic',              // Makes it italic
         marginBottom: '1.5rem',           // Adds space between subtitle and border
         paddingBottom: '0.5rem',          // Optional: extra breathing room
-        borderBottom: '1px solid #5ED1A5' // Keep or adjust as needed
+        borderBottom: '1px solid #36A77A' // Keep or adjust as needed
       }}>
         The 4 Ways We Help
       </div>
@@ -25,20 +25,20 @@ export default function Stablecoinpaymentservices() {
                   </p>
 
          <h3 style={{
-        color: '#5ED1A5', fontWeight:'600',
+        color: '#36A77A', fontWeight:'600',
       }}>1. Gateway Integration</h3>
 <p style={{
-        color: '#f5f5f5',
+        color: '#111',
       }}>
 We'll connect your site or platform to stablecoin-compatible payment gateways. Whether you're using Stripe's crypto support, Coinbase Commerce, or on-chain solutions like smart contract-based checkout, we’ll make sure payments are fast, secure, and verified on-chain.
 </p>
 <h3 style={{
-        color: '#5ED1A5', fontWeight:'600',
+        color: '#36A77A', fontWeight:'600',
       }}>2. Wallet Setup & Management</h3>
 <p>From custodial wallets (for ease of use) to non-custodial options (for maximum control), we’ll guide your team through wallet selection, setup, and safe handling of private keys—so your customers can pay and your team can sleep at night.
 </p>
 <h3 style={{
-        color: '#5ED1A5', fontWeight:'600',
+        color: '#36A77A', fontWeight:'600',
       }}>3. Stablecoin Strategy</h3>
 
 <p>
@@ -50,7 +50,7 @@ We'll connect your site or platform to stablecoin-compatible payment gateways. W
   Need help deciding between USDC, USDT, or something like EUROC? We’ll help you match your business model to the right token, with a view on transaction volume, jurisdiction, and compliance.
 </p>
 <h3 style={{
-        color: '#5ED1A5', fontWeight:'600',
+        color: '#36A77A', fontWeight:'600',
       }}>
 4. Connected Dashboards & Data Sync
 </h3>
@@ -58,10 +58,10 @@ We'll connect your site or platform to stablecoin-compatible payment gateways. W
 We build real-time dashboards that let you track stablecoin payments, wallet activity, and compliance status across borders—all in one place. Whether you’re syncing on-chain transactions with CRMs, ERPs, or marketing tools, we’ll help you bridge your web3 infrastructure with the rest of your business stack. No more spreadsheets or disconnected systems—just clean, usable data where and when you need it.
 </p>
 <div style={{
-  backgroundColor: '#2A2A2A',
+  backgroundColor: '#f5f5f5',
   padding: '2rem',
   borderRadius: '8px',
-  color: '#F5F5F5',
+  color: '#111',
   marginTop: '2rem'
 }}>
 <h3>Example Scenarios</h3>

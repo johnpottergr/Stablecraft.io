@@ -28,3 +28,18 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+.sidebar-section a {
+  text-decoration: none;
+  color: #111;
+}
+
+.sidebar-section a:hover {
+  background-color: transparent;
+  text-decoration: none;
+}
+.sidebar-section a.active {
+  font-weight: 700;
+  border-left: 3px solid #36A77A;
+}
+

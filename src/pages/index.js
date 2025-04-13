@@ -20,16 +20,16 @@ export default function Home() {
   paddingBottom: '6px',
   marginTop: '3rem',
   marginBottom: '0rem',
-  color: '#5ED1A5',
+  color: '#3BBE86',
 }}>STABLECRAFT</h1>
  {/* Subheading added here */}
  <div style={{
         fontSize: '1.25rem',
-        color: '#DDDDDD',
+        color: '#111',
         fontStyle: 'italic',              // Makes it italic
         marginBottom: '1.5rem',           // Adds space between subtitle and border
         paddingBottom: '0.5rem',          // Optional: extra breathing room
-        borderBottom: '1px solid #5ED1A5' // Keep or adjust as needed
+        borderBottom: '2px solid #5ED1A5' // Keep or adjust as needed
       }}>
         Stablecoin Payments for Real Businesses
       </div>
@@ -71,10 +71,10 @@ export default function Home() {
   {/* Top Black Header */}
   <div
     style={{
-      backgroundColor: '#111111',
+      backgroundColor: '#fff',
       padding: '25px',
       borderRadius: '12px 12px 0 0',
-      border: '1px solid #5ED1A5',
+      border: '2px solid #5ED1A5',
       display: 'flex',
       flexDirection: 'column',
       justifyContent: 'center',
@@ -83,18 +83,18 @@ export default function Home() {
       boxShadow: '0 0px 0px rgba(0, 0, 0, 0.1)'
     }}
   >
-    <h2 style={{ margin: '0', color: '#f5f5f5' }}>What We Offer</h2>
+    <h2 style={{ margin: '0', color: '#111' }}>What We Offer</h2>
   </div>
 
   {/* White Middle Content */}
   <div
     style={{
-      backgroundColor: '#111',
-      borderLeft: '1px solid #5ED1A5',
-      borderRight: '1px solid #5ED1A5',
-      borderBottom: '1px solid #5ED1A5',
+      backgroundColor: '#fff',
+      borderLeft: '2px solid #5ED1A5',
+      borderRight: '2px solid #5ED1A5',
+      borderBottom: '2px solid #5ED1A5',
       padding: '20px',
-      color: '#f5f5f5',
+      color: '#111',
     }}
   >
     <div style={{ marginTop: '0px', fontSize: '1.1rem', lineHeight: '1.5', opacity: 0.9 }}>
@@ -119,20 +119,20 @@ export default function Home() {
   {/* Full-width Black Footer */}
   <div
     style={{
-      backgroundColor: '#111',
-      color: '#F5F5F5',
+      backgroundColor: '#fff',
+      color: '#111',
       textAlign: 'center',
       padding: '1rem',
       borderRadius: '0 0 12px 12px',
-      border: '1px solid #5ED1A5',
+      border: '2px solid #5ED1A5',
       borderTop: 'none' // removes double border where black meets white
     }}
   >
-    <p style={{ margin: 0, marginTop: '0rem', color:'#f5f5f5', fontStyle: 'italic' }}>
+    <p style={{ margin: 0, marginTop: '0rem', color:'#111', fontStyle: 'italic' }}>
       Let’s make payments simple
     </p>
     <p style={{ margin: '0.5rem 0 0 0', fontSize: '0.9rem', lineHeight: '1.8' }}>
-      <a href="mailto:john@stablecraft.io" style={{ color: '#F5F5F5', textDecoration: 'underline' }}>
+      <a href="mailto:john@stablecraft.io" style={{ color: '#111', textDecoration: 'underline' }}>
         john@stablecraft.io
       </a><br />
       616.745.2985
