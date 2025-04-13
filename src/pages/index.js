@@ -74,7 +74,7 @@ export default function Home() {
       backgroundColor: '#111111',
       padding: '25px',
       borderRadius: '12px 12px 0 0',
-      border: '1px solid #f9f7f2',
+      border: '1px solid #5ED1A5',
       display: 'flex',
       flexDirection: 'column',
       justifyContent: 'center',
@@ -83,16 +83,16 @@ export default function Home() {
       boxShadow: '0 0px 0px rgba(0, 0, 0, 0.1)'
     }}
   >
-    <h2 style={{ margin: '0', color: '#5ED1A5' }}>What We Offer</h2>
+    <h2 style={{ margin: '0', color: '#f5f5f5' }}>What We Offer</h2>
   </div>
 
   {/* White Middle Content */}
   <div
     style={{
       backgroundColor: '#111',
-      borderLeft: '1px solid #f9f7f2',
-      borderRight: '1px solid #f9f7f2',
-      borderBottom: '1px solid #f9f7f2',
+      borderLeft: '1px solid #5ED1A5',
+      borderRight: '1px solid #5ED1A5',
+      borderBottom: '1px solid #5ED1A5',
       padding: '20px',
       color: '#f5f5f5',
     }}
@@ -124,11 +124,11 @@ export default function Home() {
       textAlign: 'center',
       padding: '1rem',
       borderRadius: '0 0 12px 12px',
-      border: '1px solid #f9f7f2',
+      border: '1px solid #5ED1A5',
       borderTop: 'none' // removes double border where black meets white
     }}
   >
-    <p style={{ margin: 0, marginTop: '0rem', color:'#5ED1A5', fontStyle: 'italic' }}>
+    <p style={{ margin: 0, marginTop: '0rem', color:'#f5f5f5', fontStyle: 'italic' }}>
       Let’s make payments simple
     </p>
     <p style={{ margin: '0.5rem 0 0 0', fontSize: '0.9rem', lineHeight: '1.8' }}>
