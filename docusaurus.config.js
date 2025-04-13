@@ -44,10 +44,11 @@
         /** @type {import('@docusaurus/preset-classic').Options} */
         ({
           docs: {
-            routeBasePath: '/', // 👈 This is the key line to add/change
-            sidebarPath: './sidebars.js',
+            routeBasePath: 'kb', // instead of '/'
+            sidebarPath: require.resolve('./sidebars.js'),
             // Update this to your repo
-            editUrl: 'https://github.com/johnpottergr',
+            editUrl: 'https://github.com/johnpottergr/stablecraft.io/edit/main/',
+
           },
           blog: {
             showReadingTime: true,
@@ -89,7 +90,7 @@
           items: [
             { to: '/', label: 'Welcome', position: 'left' }, // Moved to first position
             { to: '/stablecoin-payment-services', label: 'Services', position: 'left' }, // Moved to second position
-            { to: '/intro/what-is-a-stablecoin', label: 'Stablecoin KB', position: 'left', },
+            { to: '/kb', label: 'Stablecoin KB', position: 'left', },
             { href: 'https://johnpottergr.github.io/resume3.pdf', label: 'Stablecoin Liquidity', position: 'left', external: true },
             { href: 'https://github.com/johnpottergr', label: 'Stablecoin Resilence', position: 'left' },
             { to: '/blog', label: 'Blog', position: 'left' },
