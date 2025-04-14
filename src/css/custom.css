@@ -28,6 +28,21 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+.theme-doc-sidebar-container {
+  position: sticky;
+  top: 15rem; /* Match the banner height to start below it */
+  z-index: 200 !important; /* Ensure sidebar is above the banner */
+}
+
+/* Ensure dropdown menus are visible and interactive */
+.menu__list {
+  z-index: 210 !important; /* Dropdowns need to be above the sidebar container */
+}
+
+/* Ensure the sidebar itself doesn’t get overlapped */
+.theme-doc-sidebar-menu {
+  z-index: 205 !important; /* Slightly higher than the banner */
+}
 
 .sidebar-section a {
   text-decoration: none;
