@@ -46,13 +46,68 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'Quick Guide',
+      label: 'Quick Start Guide',
       items: [
         'quick-guide/getting-started',
         'quick-guide/wallet-setup',
         'quick-guide/accepting-payments',
+        'quick-guide/fees-gas-costs',
+        'quick-guide/safety-tips',
+        'quick-guide/regulations-101',
       ],
     },
+{
+  type: 'category',
+  label: 'Protocols & Networks',
+  items: [
+    'protocols-and-networks/well-known-stablecoins',
+    'protocols-and-networks/l1-vs-l2-networks',
+    'protocols-and-networks/chains-with-stablecoins',
+    'protocols-and-networks/comparing-network-fees',
+  ],
+},
+{
+  type: 'category',
+  label: 'Business Implementation',
+  items: [
+    'business-implementation/taking-payments-online',
+    'business-implementation/connecting-to-your-POS',
+    'business-implementation/cashing-out-to-fiat',
+    'business-implementation/handling-business-funds',
+    'business-implementation/stablecoin-accounting',
+  ],
+},
+{
+  type: 'category',
+  label: 'Wallets and Custody',
+  items: [
+    'wallets-and-custody/hot-vs-cold-wallets',
+    'wallets-and-custody/wallets-for-teams',
+    'wallets-and-custody/custody-options',
+    'wallets-and-custody/popular-wallet-brands',
+  ],
+},
+{
+  type: 'category',
+  label: 'Stablecoin Mechanics',
+  items: [
+    'stablecoin-mechanics/how-minting-works',
+    'stablecoin-mechanics/dai-and-collateral',
+    'stablecoin-mechanics/algorithmic-pegs',
+    'stablecoin-mechanics/smart-contract-risks',
+    'stablecoin-mechanics/peg-adjustment-logic',
+  ],
+},
+{
+type: 'category',
+label: 'Code Examples',
+items: [
+  'code-examples/web3js-send-USDC',
+  'code-examples/hedera-payment-demo',
+  'code-examples/metamask-integration',
+  'code-examples/sample-api-requests',
+],
+},
     // add more categories as needed
   ],
 };
