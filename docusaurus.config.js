@@ -13,8 +13,6 @@
     title: 'StableCraft LLC', // Updated title
     tagline: 'Payment solutions for stablecoins', // Updated tagline
     favicon: 'img/favicon.ico',
-
-    // Set the production url of your site here
     url: 'https://stablecraft.io', // Update this to your actual domain
     // Set the /<baseUrl>/ pathname under which your site is served
     // For GitHub pages deployment, it is often '/<projectName>/'
@@ -47,6 +45,7 @@
             routeBasePath: 'kb', // instead of
             sidebarPath: require.resolve('./sidebars.js'),
             // Update this to your repo
+            path: 'docs', // Ensure this points to the correct directory
             editUrl: 'https://github.com/johnpottergr/stablecraft.io/edit/main/',
 
           },

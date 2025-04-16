@@ -28,22 +28,55 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
-.theme-doc-sidebar-container {
-  position: sticky;
-  top: 15rem; /* Match the banner height to start below it */
-  z-index: 200 !important; /* Ensure sidebar is above the banner */
+
+/* Ensure the main sidebar container is positioned correctly and visible on desktop */
+@media (min-width: 997px) {
+  .theme-doc-sidebar-container {
+    position: sticky !important;
+    top: 22.5rem !important; /* 4rem (Navbar) + 15rem (banner) + 4rem (margin-top) */
+    z-index: 200 !important;
+    visibility: visible !important;
+    display: block !important;
+    width: 300px !important;
+    opacity: 1 !important;
+    overflow: visible !important;
+  }
+
+  div.sidebarViewport_arkJ {
+    top: 22.5rem !important;
+  }
+
+  .theme-doc-main-container {
+    padding-top: 22.5rem !important;
+  }
+
+  .docMainContainer {
+    display: flex !important;
+    flex: 1 !important;
+  }
+
+  /* Increase specificity to override default styles */
+  html body nav.navbar.navbar--fixed-top {
+    position: fixed !important;
+    top: 0 !important;
+    z-index: 20 !important;
+    width: 100% !important;
+  }
 }
 
-/* Ensure dropdown menus are visible and interactive */
-.menu__list {
-  z-index: 210 !important; /* Dropdowns need to be above the sidebar container */
+/* Ensure mobile navbar sidebar is visible when active */
+.navbar-sidebar {
+  left: 0 !important;
 }
 
-/* Ensure the sidebar itself doesn’t get overlapped */
-.theme-doc-sidebar-menu {
-  z-index: 205 !important; /* Slightly higher than the banner */
+/* Ensure mobile sidebar dropdowns are visible when the sidebar is active */
+.navbar-sidebar--show .navbar-sidebar__item.menu .menu__list {
+  visibility: visible !important;
+  display: block !important;
+  z-index: 210 !important;
 }
 
+/* Style sidebar links */
 .sidebar-section a {
   text-decoration: none;
   color: #111;
@@ -53,8 +86,28 @@
   background-color: transparent;
   text-decoration: none;
 }
+
 .sidebar-section a.active {
   font-weight: 700;
   border-left: 3px solid #36A77A;
+}
+
+/* On mobile, ensure the content takes full width */
+@media (max-width: 996px) {
+  .main-wrapper {
+    width: 100% !important;
+    margin-left: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  /* Hide the banner on mobile */
+  [style*="background: linear-gradient(135deg, rgb(54, 167, 122) 0%, rgb(78, 225, 160) 100%)"] {
+    display: none !important;
+  }
+}
+
+/* Ensure homepage layout */
+.main-wrapper {
+  padding-top: 0 !important;
 }
 
