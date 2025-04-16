@@ -85,7 +85,12 @@
         // }
 
         navbar: {
-          title: 'SC',
+          title: 'Stablecraft',
+          logo: {
+            alt: 'Stablecraft Logo',
+            src: 'img/green.png', // path relative to the `static` folder
+            height: '90px',
+          },
           items: [
             { to: '/', label: 'Welcome', position: 'left' }, // Moved to first position
             { to: '/stablecoin-payment-services', label: 'Services', position: 'left' }, // Moved to second position
