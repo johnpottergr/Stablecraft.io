@@ -46,7 +46,8 @@
     top: 22.5rem !important;
   }
 
-  .theme-doc-main-container {
+   /* Apply padding-top only on kb pages */
+   html body.kb-page .theme-doc-main-container {
     padding-top: 22.5rem !important;
   }
 
