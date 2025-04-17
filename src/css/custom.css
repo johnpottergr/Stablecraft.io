@@ -1,11 +1,10 @@
 /**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
+ * =============================
+ * Global Styles & Infima Overrides
+ * =============================
  */
 
-/* You can override the default Infima variables here. */
-:root {
+ :root {
   --ifm-color-primary: #2e8555;
   --ifm-color-primary-dark: #29784c;
   --ifm-color-primary-darker: #277148;
@@ -17,7 +16,6 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
   --ifm-color-primary: #25c2a0;
   --ifm-color-primary-dark: #21af90;
@@ -29,86 +27,66 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
-/* Ensure the main sidebar container is positioned correctly and visible on desktop */
+/**
+ * =============================
+ * Desktop Layout (min-width: 997px)
+ * =============================
+ */
 @media (min-width: 997px) {
-  .theme-doc-sidebar-container {
-    position: sticky !important;
-    top: 22.5rem !important; /* 4rem (Navbar) + 15rem (banner) + 4rem (margin-top) */
-    z-index: 200 !important;
-    visibility: visible !important;
-    display: block !important;
-    width: 300px !important;
-    opacity: 1 !important;
-    overflow: visible !important;
+  /* Sticky sidebar for KB pages */
+  body.kb-page .theme-doc-sidebar-container {
+    position: sticky;
+    top: 18.75rem; /* 3.75rem navbar + 15rem hero */
+    z-index: 200;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 300px;
+  }
+   /* Adjust sidebar alignment if needed */
+   body.kb-page .sidebar_njMd {
+    padding-top: 4.5rem;
+  }
+/**
+ * =============================
+ * Global Padding for Non-KB Pages
+ * =============================
+ */
+ html body:not(.kb-page) div[id="__docusaurus_skipToContent_fallback"][class*="main-wrapper"] {
+  padding-top: 4.5rem;
+  margin-top: 0;
+}
+
+  /* Adjust main content for KB layout */
+  body.kb-page .theme-doc-main-container {
+    padding-top: 19.25rem; /* navbar + hero + spacing */
   }
 
-  div.sidebarViewport_arkJ {
-    top: 22.5rem !important;
+  /* Reset unwanted padding on wrapper */
+  body.kb-page .main-wrapper {
+    padding-top: 0;
+    margin-top: 0;
   }
 
-   /* Apply padding-top only on kb pages */
-   html body.kb-page .theme-doc-main-container {
-    padding-top: 22.5rem !important;
+  /* Sidebar inner structure */
+  .theme-doc-sidebar-container .menu,
+  .theme-doc-sidebar-container .menu__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    height: auto;
   }
 
   .docMainContainer {
-    display: flex !important;
-    flex: 1 !important;
+    display: flex;
+    flex: 1;
   }
 
-  /* Increase specificity to override default styles */
-  html body nav.navbar.navbar--fixed-top {
-    position: fixed !important;
-    top: 0 !important;
-    z-index: 20 !important;
-    width: 100% !important;
+  nav.navbar.navbar--fixed-top {
+    position: fixed;
+    top: 0;
+    z-index: 20;
+    width: 100%;
   }
 }
-
-/* Ensure mobile navbar sidebar is visible when active */
-.navbar-sidebar {
-  left: 0 !important;
-}
-
-/* Ensure mobile sidebar dropdowns are visible when the sidebar is active */
-.navbar-sidebar--show .navbar-sidebar__item.menu .menu__list {
-  visibility: visible !important;
-  display: block !important;
-  z-index: 210 !important;
-}
-
-/* Style sidebar links */
-.sidebar-section a {
-  text-decoration: none;
-  color: #111;
-}
-
-.sidebar-section a:hover {
-  background-color: transparent;
-  text-decoration: none;
-}
-
-.sidebar-section a.active {
-  font-weight: 700;
-  border-left: 3px solid #36A77A;
-}
-
-/* On mobile, ensure the content takes full width */
-@media (max-width: 996px) {
-  .main-wrapper {
-    width: 100% !important;
-    margin-left: 0 !important;
-    padding-top: 0 !important;
-  }
-
-  /* Hide the banner on mobile */
-  [style*="background: linear-gradient(135deg, rgb(54, 167, 122) 0%, rgb(78, 225, 160) 100%)"] {
-    display: none !important;
-  }
-}
-
-/* Ensure homepage layout */
-.main-wrapper {
-  padding-top: 0 !important;
-}
-
