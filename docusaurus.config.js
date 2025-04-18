@@ -100,7 +100,7 @@
             { to: '/blog', label: 'Blog', position: 'left' },
           ],
         },
-
+      
         footer: {
           style: 'dark',
           links: [

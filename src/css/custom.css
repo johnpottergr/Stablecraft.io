@@ -41,25 +41,40 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    border-right: 0px;
     width: 300px;
   }
+    /* Move sidebar to the right */
+    .theme-doc-sidebar-container {
+      margin-left: 122px; /* 2 inches = 192px */
+    }
+  /* Shift main content to match sidebar position */
+  .theme-doc-main-container {
+    margin-left: 122px; /* Same value for clean alignment */
+  }
+/* Darken sidebar menu items */
+.menu__link {
+  color: #1a1a1a; /* Or any darker hex value you prefer */
+  font-weight: 500;
+}
    /* Adjust sidebar alignment if needed */
    body.kb-page .sidebar_njMd {
     padding-top: 4.5rem;
   }
+
 /**
  * =============================
  * Global Padding for Non-KB Pages
  * =============================
  */
  html body:not(.kb-page) div[id="__docusaurus_skipToContent_fallback"][class*="main-wrapper"] {
-  padding-top: 4.5rem;
+  padding-top: 1.0rem;
   margin-top: 0;
 }
 
   /* Adjust main content for KB layout */
   body.kb-page .theme-doc-main-container {
-    padding-top: 19.25rem; /* navbar + hero + spacing */
+    padding-top: 19.00rem; /* navbar + hero + spacing */
   }
 
   /* Reset unwanted padding on wrapper */
@@ -77,6 +92,12 @@
     width: 100%;
     height: auto;
   }
+/* Shrink main content title */
+.theme-doc-markdown h1,
+.theme-doc-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+}
 
   .docMainContainer {
     display: flex;
