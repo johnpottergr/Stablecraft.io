@@ -71,6 +71,14 @@ export default function StablecoinStressTest() {
     },
   };
 
+  const collateralData = {
+    USDT: '60% Treasuries, 20% commercial paper',
+    USDC: '100% short-term U.S. Treasuries',
+    DAI: 'Multi-collateral: ETH, USDC, others',
+    TUSD: 'Fully backed by U.S. dollars',
+    FRAX: 'Partially algorithmic, partly collateralized'
+  };
+
   const calculateRiskScore = (coin) => {
     const metrics = simulatedMetrics[coin];
     let total = 0;
@@ -101,6 +109,7 @@ export default function StablecoinStressTest() {
       last: '—',
       recovery: '—',
       score: (score * 100).toFixed(1),
+      collateral: collateralData[coin]
     };
   });
   const events = [
@@ -157,6 +166,7 @@ export default function StablecoinStressTest() {
               <div style={{ backgroundColor: coin.riskColor, color: '#111', fontWeight: 'bold', borderRadius: '6px', padding: '4px 8px', display: 'inline-block', marginBottom: '12px' }}>{coin.risk} ({coin.score})</div>
               <div style={{ fontSize: '0.85rem', color: '#555' }}>Last depegging<br /><strong>{coin.last}</strong></div>
               <div style={{ fontSize: '0.85rem', color: '#555' }}>Recovery<br /><strong>{coin.recovery}</strong></div>
+              <div style={{ fontSize: '0.85rem', color: '#555', marginTop: '6px' }}>Collateral:<br /><strong>{coin.collateral}</strong></div>
             </div>
           ))}
         </div>
