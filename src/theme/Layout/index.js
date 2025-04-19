@@ -51,14 +51,14 @@ function LayoutWrapper(props) {
       {showBanner && (
         <div
           style={{
-            background: 'linear-gradient(135deg, rgb(54, 167, 122) 0%, rgb(78, 225, 160) 100%)',
+            background: 'linear-gradient(165deg, rgb(54, 167, 122) 0%, rgb(78, 225, 160) 100%)',
             color: 'white',
             textAlign: 'center',
-            height: '15rem',
+            height: '17rem',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            fontSize: '2.25rem',
+            fontSize: '3.00rem',
             fontWeight: 'bold',
             position: 'relative',
             zIndex: 250,
