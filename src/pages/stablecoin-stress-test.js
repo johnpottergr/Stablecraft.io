@@ -149,7 +149,7 @@ export default function StablecoinStressTest() {
 
   return (
     <Layout title="Stablecraft Stress Test">
-      <main style={{ padding: '40px 20px', maxWidth: '1200px', margin: '0 auto' }}>
+      <main style={{ padding: '80px 20px', maxWidth: '1200px', margin: '0 auto' }}>
         <div style={{ textAlign: 'center' }}>
           <h2 style={{ color: '#222', fontSize: '1.5rem', marginBottom: '0.25rem' }}>Stablecoin Stress Test Risk Assessment</h2>
           <p style={{ fontSize: '0.95rem', color: '#666' }}>

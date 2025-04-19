@@ -74,8 +74,8 @@
       /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
       ({
         colorMode: {
-          defaultMode: 'dark',
-          disableSwitch: false, // Enable the toggle
+          defaultMode: 'light',
+          disableSwitch: true, // Enable the toggle
           respectPrefersColorScheme: false, // Optional: sync with user's system theme
         },
         // Replace with your project's social card
@@ -93,11 +93,12 @@
           },
           items: [
             { to: '/', label: 'Welcome', position: 'left' }, // Moved to first position
-            { to: '/stablecoin-payment-services', label: 'Services', position: 'left' }, // Moved to second position
-            { to: '/kb/intro/what-is-a-stablecoin', label: 'Stablecoin KB', position: 'left', },
-            { href: '/stablecoin-stress-test', label: 'Stablecoin Stress Test', position: 'left'},
-            { href: 'https://github.com/johnpottergr', label: 'Stablecoin Liquidity', position: 'left' },
-            { to: '/blog', label: 'Blog', position: 'left' },
+            { to: '/stablecoin-payment-services', label: 'Payment Services', position: 'left' }, // Moved to second position
+            { to: '/kb/intro/what-is-a-stablecoin', label: 'Knowledge Base', position: 'left', },
+            { href: '/stablecoin-liquidity-tracker', label: 'Liquidity Tracker', position: 'left' },
+            { href: '/stablecoin-stress-test', label: 'Stress Test', position: 'left'},
+            { href: '/risk-manager', label: 'Risk Manager', position: 'left'},
+            { to: '/blog', label: 'Updates & Blog', position: 'right' },
           ],
         },
 

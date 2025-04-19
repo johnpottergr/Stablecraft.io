@@ -110,4 +110,12 @@
     z-index: 20;
     width: 100%;
   }
+  /* src/css/custom.css */
+.navbar__item {
+  margin-left: 10px;
+}
+.navbar__item:first-child {
+  margin-left: 0;
+}
+
 }

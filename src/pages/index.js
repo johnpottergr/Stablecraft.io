@@ -7,7 +7,7 @@ import { FaPlay } from 'react-icons/fa'; // Import the FaPlay icon
 export default function Home() {
  return (
    <Layout title="Stablecraft">
-     <main style={{ padding: '20px', display: 'flex', gap: '40px', maxWidth: '1200px', margin: '0 auto' }}>
+     <main style={{ padding: '20px', display: 'flex', gap: '40px', maxWidth: '1200px', margin: '40px auto' }}>
 
   {/* Right Column moved first (was second) */}
   <div style={{ flex: '1', textAlign: 'left' }}>
@@ -21,7 +21,7 @@ export default function Home() {
   marginTop: '3rem',
   marginBottom: '0rem',
   color: '#3BBE86',
-}}>STABLECRAFT</h1>
+}}>Stablecraft LLC</h1>
  {/* Subheading added here */}
  <div style={{
         fontSize: '1.25rem',

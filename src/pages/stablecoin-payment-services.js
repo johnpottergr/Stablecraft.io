@@ -4,7 +4,7 @@ import Layout from '@theme/Layout';
 export default function Stablecoinpaymentservices() {
   return (
     <Layout title="Services">
-      <div style={{ padding: '20px', maxWidth: '830px', margin: '0 auto', color: '#111' }}>
+      <div style={{ padding: '20px', maxWidth: '830px', margin: '40px auto', color: '#111' }}>
         <h1 style={{ color: '#36A77A' }}>Payment Services</h1>
 
         <div style={{
