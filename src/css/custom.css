@@ -132,5 +132,11 @@
 article .markdown h1 {
   margin-top: 2rem; /* Adjust as needed */
 }
+.centered-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
 
 }
