@@ -1,0 +1,62 @@
+---
+id: fees-gas-costs
+title: Understanding Fees
+sidebar_position: 4
+---
+
+When sending or receiving stablecoin payments, you may encounter a few types of fees. These are usually lower than traditional payment processing fees, but they’re still important to understand—especially if you're managing multiple transactions, integrating a wallet, or working across blockchains.
+This guide breaks down the most common types of fees you’ll run into and how to plan around them.
+
+### 1. Network (Gas) fees
+
+Every blockchain charges a fee to process transactions—this is known as a network fee or gas fee. It pays the validators or nodes that confirm and secure your transaction.
+
+**Key points:**
+
+- Fees are paid in the native token of the blockchain, not the stablecoin itself.
+For instance, Ethereum fees are paid in ETH, Polygon fees are paid in MATIC, and Solana fees are paid in SOL.
+- Fee amounts vary based on network congestion. During busy periods, fees go up.
+- Wallets usually estimate fees for you before you confirm the transaction. Example:
+Sending 50 USDC on Ethereum might cost $2–$10 in ETH during peak hours. On Polygon, it might cost just a few cents in MATIC.
+
+### 2. Exchange or conversion fees
+If you're swapping another token (e.g., ETH) into a stablecoin, or vice versa, the platform you're using may charge a conversion fee. This is separate from the blockchain fee and is often a small percentage of the total.
+
+**Tips:**
+- Check the fee percentage before confirming a swap.
+- Compare rates across platforms if you're doing large conversions.
+-  or payment services bake this fee into the displayed exchange rate.
+
+### 3. Service or platform fees
+Some payment providers, wallets, or gateways may charge an additional fee for processing stablecoin payments—especially for features like:
+- Fiat on/off ramps (converting stablecoins to USD or vice versa)
+- Batch payments or invoicing tools
+- Instant settlement or guaranteed delivery
+
+These fees are typically flat-rate or volume-based and may be listed in your transaction summary or billing section.
+
+### 4. Bridging fees (when changing networks)
+If you need to move your stablecoins from one blockchain to another—for example, from Ethereum to Arbitrum—you’ll use a bridge. Bridging often involves:
+- A network fee on the source chain
+- A fee from the bridge provider
+- A waiting period for final settlement
+
+Bridging is useful but can be more expensive and slower than regular transfers, so use it when necessary and plan ahead.
+
+### Reducing fees
+Here are a few ways to keep fees low:
+
+- **Use low-fee networks** like Polygon, Solana, or Avalanche for everyday transfers
+- **Avoid peak hours**—fees often drop outside of U.S. and European business hours
+- **Consolidate transactions** instead of sending many small ones
+- **Keep native tokens in your wallet** to cover network fees smoothly
+
+### Final thoughts
+Stablecoin payments are efficient, but understanding fees helps you avoid surprises—especially when transacting at scale or integrating with your app.
+
+If you're sending frequent payments, building a wallet integration, or using cross-chain workflows, visit our Developer Docs for fee estimation tips and batching strategies.
+
+### Next up:
+
+- Tips on Safety – Protect your funds while using stablecoins
+- Regulation Basics – What to know about compliance and reporting requirements

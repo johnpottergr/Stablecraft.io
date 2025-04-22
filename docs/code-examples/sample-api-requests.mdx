@@ -1,0 +1,87 @@
+---
+id: sample-api-requests
+title: Sample API Requests
+sidebar_position: 4
+---
+
+If your app or platform processes stablecoin transactions, you’ll likely want a backend layer to help manage interactions with wallets and blockchain networks. Whether you’re sending payouts, confirming incoming payments, or logging transactions, these sample API patterns will give you a solid starting point.
+The examples below are written in JavaScript (Node.js/Express) but can be adapted to any stack. They assume you're using a provider like Infura, Alchemy, or a private RPC to connect to an EVM-compatible chain such as Ethereum, Polygon, or Arbitrum.
+
+### 1. Check stablecoin balance (ERC-20)
+```
+js
+// GET /balance?address=0x123...&token=0xA0b8...
+import Web3 from 'web3';
+import erc20ABI from './erc20ABI.json'; // standard ERC-20 ABI
+
+const web3 = new Web3(process.env.RPC_URL);
+
+export async function getBalance(req, res) {
+  const { address, token } = req.query;
+
+  try {
+    const contract = new web3.eth.Contract(erc20ABI, token);
+    const rawBalance = await contract.methods.balanceOf(address).call();
+    const balance = Number(rawBalance) / 10 ** 6; // For USDC: 6 decimals
+
+    res.json({ address, token, balance });
+  } catch (err) {
+    res.status(500).json({ error: 'Could not fetch balance', details: err.message });
+  }
+}
+```
+### 2. Send a stablecoin transfer
+```
+js
+// POST /send
+// body: { from, to, amount, token }
+
+export async function sendStablecoin(req, res) {
+  const { from, to, amount, token } = req.body;
+  const contract = new web3.eth.Contract(erc20ABI, token);
+
+  try {
+    const amountRaw = web3.utils.toBN(amount * 10 ** 6); // USDC format
+    const gas = await contract.methods.transfer(to, amountRaw).estimateGas({ from });
+
+    const tx = await contract.methods
+      .transfer(to, amountRaw)
+      .send({ from, gas });
+
+    res.json({ status: 'success', txHash: tx.transactionHash });
+  } catch (err) {
+    res.status(500).json({ error: 'Transfer failed', details: err.message });
+  }
+}
+```
+*Note:* This requires the private key to be loaded into a signer like Web3’s web3.eth.accounts.wallet, or handled through a secure service like Fireblocks or a custodian. Never expose private keys in plaintext.
+
+### 3. Monitor for incoming payments
+To track incoming stablecoin transfers, you can use an event listener or webhook-style polling system.
+```
+js
+const subscription = contract.events.Transfer({
+  filter: { to: monitoredAddress },
+}).on('data', (event) => {
+  const { from, to, value } = event.returnValues;
+  const amount = Number(value) / 10 ** 6;
+
+  console.log(`Received ${amount} tokens from ${from}`);
+});
+```
+For production systems, you can use services like:
+
+- **Alchemy Notify** for webhook alerts
+- **The Graph** to query blockchain events
+- **Backend cron jobs** that poll and log Transfer events at intervals
+
+### Suggested use cases
+- Log wallet activity for user dashboards
+- Trigger actions after a payment is confirmed
+- Build internal tools to manage treasury or vendor payouts
+- Run batch payouts or scheduled transfers via API
+
+### Next steps
+- Web3.js Send USDC – Direct example of frontend token transfers
+- Handling Business Funds – Organize wallet flows and team access
+- Stablecoin Accounting – How to log, track, and value on-chain payments

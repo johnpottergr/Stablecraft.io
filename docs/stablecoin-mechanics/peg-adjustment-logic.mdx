@@ -1,0 +1,50 @@
+---
+id: peg-adjustment-logic
+title: Peg Adjustment Logic
+sidebar_position: 5
+---
+
+At the heart of every stablecoin is a promise: that 1 token
+will always be worth approximately $1. But market forces
+don’t always cooperate. Whether it’s a spike in demand, a
+sudden selloff, or broader market volatility, stablecoins
+face constant pressure to maintain their peg. That’s where
+peg adjustment logic comes in.
+
+#### Different approaches to maintaining the peg
+Stablecoins use different strategies to correct price drift and hold their target value. For fiat-backed tokens like USDC or USDT, the peg is maintained by the ability to redeem tokens 1:1 for U.S. dollars.
+
+If the price dips below $1 on exchanges, traders can buy tokens cheaply, redeem them for full value, and profit from the difference—an arbitrage process that pulls the price back up. The same process works in reverse: if a token trades above $1, users can deposit dollars, receive stablecoins, and sell them at a premium, increasing supply and balancing the price downward.
+
+- **Collateralized stablecoins** like DAI maintain their peg
+through a more complex, rules-based system. When DAI drifts
+too far from $1, MakerDAO adjusts key parameters like
+stability fees (interest rates on loans), collateralization
+ratios, or even adds/removes supported assets. These changes
+make minting more or less attractive, nudging supply and
+demand back into balance. Over time, the protocol fine-tunes
+these settings to keep the peg as close to $1 as possible.
+
+- **Algorithmic stablecoins** take an even more active approach.
+Instead of relying on collateral or redemptions, they use
+built-in mechanisms to expand or contract the token supply.
+If the price rises above $1, the system mints more tokens to
+increase supply. If the price falls below $1, it removes
+tokens from circulation—either by burning them or offering
+incentives to hold or convert them. Price adjustments are usually driven by smart contracts reacting to on-chain
+price feeds (oracles), sometimes multiple times per day.
+
+- **Hybrid stablecoins**—like Frax—combine collateral with algorithmic mechanisms. In this setup, a portion of the peg is enforced through traditional backing, while the rest is managed by supply elasticity. The goal is to create a self-correcting system that doesn’t rely fully on reserves or third parties.
+
+Regardless of the model, the core principle is the same: peg adjustment logic uses market incentives and protocol rules to keep the token's value stable over time. The more efficient and credible the mechanism, the tighter the peg. But every model comes with trade-offs. Overcollateralized systems can be capital-inefficient. Algorithmic ones can be fragile during market stress. Even fiat-backed models depend on user trust in the issuer’s reserves and redemption process.
+
+For users and developers, understanding how a stablecoin adjusts its peg is critical to evaluating its reliability. Does it rely on collateral, incentives, redemption, or code? Can it react quickly enough in a volatile market? And what happens if confidence breaks down?
+
+Stable value is a moving target—and stablecoins stay on it through constant adjustment, not blind automation.
+
+### Next up:
+
+- Smart Contract Risks – How failures in logic or data can break the peg
+- Algorithmic Pegs – Dig deeper into elastic supply models
+- Choosing a Stablecoin – Evaluate different peg mechanisms based on your business needs
+

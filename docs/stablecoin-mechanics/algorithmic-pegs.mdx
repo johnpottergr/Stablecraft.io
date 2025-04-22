@@ -1,0 +1,49 @@
+---
+id: algorithmic-pegs
+title: Algorithmic Pegs
+sidebar_position: 3
+---
+
+Unlike stablecoins backed by fiat or collateralized crypto, algorithmic stablecoins use smart contracts and market incentives to maintain their value. There’s no reserve of dollars or locked ETH behind them—instead, the peg to $1 is maintained by adjusting supply and demand dynamically through code.
+
+At a high level, algorithmic stablecoins are built on the idea that price stability can be enforced without direct backing.
+If demand pushes the stablecoin above $1, the protocol
+mints more tokens to increase supply and bring the price
+down. If the price drops below $1, the system burns tokens
+or incentivizes users to remove them from circulation,
+tightening supply and nudging the price back up.
+
+The logic to promote price stability
+is embedded in the protocol itself—usually through an
+on-chain oracle that tracks price movements and triggers the rebalancing.
+
+#### Common mechanisms for maintaining the peg
+Different types of algorithmic models exist, and most rely on one or more of the following mechanisms:
+
+**Mint-and-burn logic:** Users can exchange the stablecoin for a secondary token, usually at a fixed value (e.g., 1 stablecoin = $1 worth of governance token), incentivizing arbitrage that restores the peg.
+
+**Seigniorage systems:** The protocol issues and removes supply in response to target price deviations, often through bond-style instruments or time-based auctions.
+
+**Rebasing models:** The supply of the stablecoin in user wallets is adjusted periodically—automatically increasing or decreasing balances across all holders.
+
+One of the most well-known examples of this model was TerraUSD (UST), which used mint-and-burn logic tied to its sister token LUNA. When UST traded above $1, users could mint LUNA to receive UST. When it fell below $1, they could redeem UST for LUNA. In theory, this kept UST near its peg. In practice, when confidence faltered and the incentives broke down, the system entered a death spiral—and both tokens collapsed in value.
+
+#### Why algorithmic pegs are risky
+TerraUSD's failure highlights the inherent risk of algorithmic peg systems: they rely heavily on consistent user behavior and trust in the incentive structure. When markets are calm, the mechanisms often work. But in times of volatility or declining confidence, the models can unravel quickly, especially if there’s no collateral to act as a backstop.
+
+Still, not all algorithmic systems are the same. Newer models—like Frax in its original hybrid form—combine algorithmic controls with partial collateralization, aiming to reduce risk while maintaining some of the elasticity and decentralization benefits. These hybrid approaches acknowledge that purely algorithmic models struggle under pressure, and try to balance stability with flexibility.
+
+For developers or businesses, it’s important to treat algorithmic stablecoins with caution. They can offer exciting design space—especially for on-chain applications that value decentralization and programmability—but they don’t offer the same predictability or liquidity as fiat-backed or overcollateralized stablecoins. If your application or payment flow depends on value stability, be sure to evaluate the peg history and underlying logic of any algorithmic stablecoin you plan to use.
+
+Next up in this section:
+
+- Smart Contract Risks – Understand where logic-based systems can fail
+- Peg Adjustment Logic – Learn how automated mechanisms enforce price targets over time
+
+
+
+
+
+
+
+

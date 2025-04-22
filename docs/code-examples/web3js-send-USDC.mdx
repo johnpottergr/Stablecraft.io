@@ -1,0 +1,90 @@
+---
+id: web3js-send-USDC
+title: Web3.js Send USDC
+sidebar_position: 1
+---
+
+
+The coding example below shows how to send **USDC** using `web3.js` and an Ethereum-compatible network (such as Ethereum Mainnet, Polygon, or Arbitrum). It assumes the sender is using a browser wallet like MetaMask and already holds a balance of USDC.
+
+### Before you start
+
+To run this example, you’ll need:
+
+- A USDC contract address on the chain you’re using
+- The user’s wallet connected (e.g. via MetaMask)
+- The ABI for a standard ERC-20 token
+- Web3.js installed in your project
+
+> **Note:** USDC is an ERC-20 token.
+This code works for any stablecoin following that
+standard (e.g. USDT, DAI, etc.).
+
+### Install Web3.js
+
+
+```bash
+npm install web3
+```
+
+### Code example
+```bash
+import Web3 from 'web3';
+
+// Injected provider from MetaMask
+const web3 = new Web3(window.ethereum);
+
+// Replace with USDC contract address on your network
+const usdcAddress = '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48'; // Ethereum Mainnet
+
+// Standard ERC-20 ABI (simplified to just transfer)
+const erc20ABI = [
+  {
+    constant: false,
+    inputs: [
+      { name: '_to', type: 'address' },
+      { name: '_value', type: 'uint256' }
+    ],
+    name: 'transfer',
+    outputs: [{ name: '', type: 'bool' }],
+    type: 'function'
+  }
+];
+
+const usdc = new web3.eth.Contract(erc20ABI, usdcAddress);
+
+// Amount of USDC to send (6 decimals)
+const amount = web3.utils.toBN(10 * 10 ** 6); // 10 USDC
+
+// Replace with recipient address
+const recipient = '0x123...abc';
+
+// Send transaction
+async function sendUSDC() {
+  const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
+  const sender = accounts[0];
+
+  try {
+    const tx = await usdc.methods.transfer(recipient, amount).send({ from: sender });
+    console.log('Transfer successful:', tx.transactionHash);
+  } catch (error) {
+    console.error('Transfer failed:', error);
+  }
+}
+
+```
+
+### Notes
+- USDC uses 6 decimals, not 18 like most tokens. Always scale correctly when setting amount.
+- This example works with any EVM-compatible network, as long as the USDC contract address matches that network
+(e.g. Polygon USDC address).
+- The transfer method does not include gas estimation or fee customization—add that as needed for production environments.
+- If you're building a backend service or working without MetaMask, you’ll need a provider with private key signing
+(e.g. via Alchemy or Infura).
+
+### Next steps
+- Metamask Integration – How to connect and sign transactions from a frontend
+- Sample API Requests – Backend examples for token transfers and balance checks
+- Handling Business Funds – Organize wallets and manage token flows across your app or platform
+
+

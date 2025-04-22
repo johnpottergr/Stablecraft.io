@@ -1,0 +1,37 @@
+---
+id: how-minting-works
+title: How Minting Works
+sidebar_position: 1
+---
+
+“Minting” is the process of creating new stablecoin tokens and adding them to circulation. It’s a fundamental part of how stablecoins operate—because in order for users to send or hold stablecoins, those tokens first have to be issued somewhere. But unlike traditional currencies, stablecoins are minted on the blockchain, often through a smart contract or a permissioned issuing process.
+
+The way minting works depends on the type of stablecoin. In fiat-backed models like USDC or USDT, minting usually happens when a user deposits real money with a central issuer. That issuer—often a regulated company—then mints the equivalent amount of stablecoins and sends them to the user’s wallet. For example, depositing $10,000 into Circle’s platform would result in the minting of 10,000 new USDC tokens, each representing $1.
+
+The minting process is tightly controlled. The issuer must keep reserves (usually in cash or short-term Treasuries) to back each minted token. These reserves are sometimes verified by third-party auditors or attestation providers. When users redeem their stablecoins for fiat, the tokens are "burned"—meaning they’re permanently removed from circulation to keep the balance between supply and backing intact.
+
+#### Collateralized crypto
+In collateralized crypto stablecoins like DAI, minting works a little differently. Instead of depositing fiat, users lock up cryptocurrency (such as ETH or USDC) in a smart contract as collateral. The system then mints a smaller amount of stablecoins in return—usually less than the value of the collateral to maintain a buffer. For example, locking $150 worth of ETH might allow a user to mint $100 worth of DAI. If the value of the collateral drops too low, the system can liquidate it to protect the peg.
+
+In this model, minting is decentralized and governed by protocol rules rather than a company. The amount you can mint depends on real-time asset prices, collateral ratios, and system parameters—often voted on by a DAO (decentralized autonomous organization).
+
+#### Algorithmic stablecoins
+Algorithmic stablecoins don’t rely on traditional reserves. Instead, they use smart contract logic to dynamically mint and burn tokens in response to supply and demand. If the stablecoin’s price goes above $1, the system mints more to increase supply and bring the price down. If the price drops below $1, it burns tokens or incentivizes users to remove them from circulation. This model is riskier and has seen mixed success in practice.
+
+No matter the design, minting is always a balancing act. It ties into broader concerns like stability, transparency, and risk management. The goal is to maintain a consistent 1:1 value with the underlying asset—whether that’s fiat, crypto, or an algorithmic target.
+
+For businesses and developers interacting with stablecoins, it's important to understand where the tokens come from and how new supply is introduced. If you're integrating with a payment platform, for instance, you'll want to know whether you're dealing with tokens that were freshly minted by a trusted issuer or tokens that have been circulating on-chain for a while.
+
+### Next in this section:
+
+- DAI and Collateral – A closer look at crypto-backed minting systems
+- Algorithmic Pegs – How minting works in elastic supply models
+- Peg Adjustment Logic – What happens when supply and demand shift
+
+
+
+
+
+
+
+

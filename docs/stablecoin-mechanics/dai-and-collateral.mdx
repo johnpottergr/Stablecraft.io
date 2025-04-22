@@ -1,0 +1,36 @@
+---
+id: dai-and-collateral
+title: DAI and Collateral
+sidebar_position: 2
+---
+
+DAI is a decentralized stablecoin built on Ethereum, and it’s unique because it’s not backed by dollars in a bank account—it’s backed by collateralized crypto assets held in smart contracts. This model gives DAI its appeal among DeFi users and developers who want stablecoins without relying on centralized institutions. But it also makes DAI’s mechanics a bit more complex than traditional fiat-backed stablecoins like USDC or USDT.
+
+The entire DAI system is governed by MakerDAO, a decentralized organization that sets the rules for how much collateral is needed, what assets are accepted, and how minting and liquidation processes work.
+
+#### How DAI Is minted
+When someone wants to mint DAI, they deposit crypto collateral into a Maker Vault—a type of smart contract. For example, they might lock up $150 worth of ETH to generate 100 DAI. That $150 isn’t just sitting there for show. It’s a buffer meant to absorb price fluctuations. Because crypto prices can swing rapidly, DAI is always overcollateralized—meaning the value of the locked assets is higher than the value of the DAI minted.
+
+The most common types of collateral include:
+
+- ETH, the native asset of the Ethereum network
+- WSTETH and other liquid staking tokens
+- USDC, which is itself a stablecoin but helps anchor DAI’s value
+- Real-world assets, like tokenized treasuries or invoices (used in some Maker vaults)
+
+If the value of the collateral falls too low and the position becomes undercollateralized, the system triggers a liquidation. This means the collateral is sold off to repay the DAI and keep the peg stable. This process is automated by smart contracts and helps protect the protocol from systemic risk.
+
+#### Transparency and risk management
+Unlike fiat-backed stablecoins, which depend on centralized reserves and bank audits, DAI’s backing is transparent and on-chain. Anyone can check how much collateral exists, what assets are locked, and how much DAI has been minted at any given time. That transparency is one of DAI’s main strengths, especially for crypto-native businesses and protocols.
+
+That said, the mechanics behind DAI do introduce a few trade-offs. Its peg to the dollar can occasionally drift slightly during market stress, and its collateral mix (especially the reliance on USDC) has led to ongoing debates about how “decentralized” it really is. MakerDAO is actively evolving its model to address this, including greater use of real-world assets and governance-driven changes to risk parameters.
+
+For businesses, understanding DAI’s collateral system is helpful when choosing which stablecoins to accept or hold. If you’re accepting DAI as payment, you’re interacting with a token that’s governed by protocol rules and smart contract logic—not a company. That means no support line to call, but also no counterparty risk in the traditional sense.
+
+If you're building on-chain integrations or treasury strategies, DAI offers more flexibility and composability than centralized stablecoins—but it comes with more moving parts to understand.
+
+Next in this section:
+
+- Algorithmic Pegs – How minting and burning respond to price changes
+- Smart Contract Risks – What to know before trusting protocol-backed stablecoins
+- Peg Adjustment Logic – How decentralized systems try to hold the dollar value

@@ -1,0 +1,77 @@
+---
+id: hedera-payment-demo
+title: Hedera Payment Demo
+sidebar_position: 2
+---
+
+The coding example below shows how to send a payment using the **Hedera Hashgraph network**, either with HBAR (Hedera’s native currency) or a Hedera Token Service (HTS) stablecoin. The demo uses the [@hashgraph/sdk](https://www.npmjs.com/package/@hashgraph/sdk) JavaScript library and assumes you're working in a testnet environment.
+
+If you're building a wallet-connected app, merchant tool, or a Hedera integration into a platform, this is a starting point for sending funds programmatically.
+
+### Before you start
+
+You’ll need:
+
+- A **Hedera testnet account** and private key (can be created at [portal.hedera.com](https://portal.hedera.com))
+- Node.js environment with `@hashgraph/sdk` installed
+- (Optional) A **token ID** for an HTS stablecoin (if not using HBAR)
+
+### Install the SDK
+
+```bash
+npm install @hashgraph/sdk
+```
+### Code example (send HBAR)
+
+```bash
+import {
+  Client,
+  PrivateKey,
+  AccountId,
+  Hbar,
+  TransferTransaction,
+} from "@hashgraph/sdk";
+
+// Set up the client
+const operatorId = AccountId.fromString("0.0.XXXXXX");
+const operatorKey = PrivateKey.fromString("302e...");
+
+const client = Client.forTestnet();
+client.setOperator(operatorId, operatorKey);
+
+// Recipient account
+const recipient = AccountId.fromString("0.0.YYYYYY");
+
+// Amount to send
+const amount = new Hbar(10); // 10 HBAR
+
+async function sendHbar() {
+  const tx = await new TransferTransaction()
+    .addHbarTransfer(operatorId, amount.negated()) // Sender pays
+    .addHbarTransfer(recipient, amount)            // Recipient gets
+    .execute(client);
+
+  const receipt = await tx.getReceipt(client);
+  console.log("Transfer status:", receipt.status.toString());
+}
+
+sendHbar();
+```
+### To send HTS tokens instead
+Replace TransferTransaction() with .addTokenTransfer(tokenId, accountId, amount) lines:
+
+```
+.addTokenTransfer("0.0.tokenId", operatorId, -100) // Subtract 100 units
+.addTokenTransfer("0.0.tokenId", recipient, 100)   // Add 100 units
+```
+Make sure the token is already associated with the recipient account, and that the sender has a balance.
+
+### Notes
+- Hedera doesn’t use gas fees in the same way as Ethereum—transaction costs are fixed and very low.
+- On mainnet, you must use mainnet account IDs and keys, and fund the account with real HBAR.
+- For HTS tokens, you’ll need to associate the token with each recipient account before sending it. This can be done with a TokenAssociateTransaction.
+
+### Next steps
+- Metamask Integration – If using Hedera in an EVM-compatible context (e.g., Hedera Smart Contract Service)
+- Handling Business Funds – How to store and manage stablecoin balances in Hedera apps
+- Sample API Requests – Explore how to trigger Hedera transfers via a backend service or webhook

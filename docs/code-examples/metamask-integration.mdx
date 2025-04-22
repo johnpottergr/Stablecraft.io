@@ -1,0 +1,91 @@
+---
+id: metamask-integration
+title: Metamask Integration
+sidebar_position: 3
+---
+
+MetaMask is the most widely used browser wallet for Ethereum and EVM-compatible blockchains. Integrating MetaMask into your app lets users easily connect their wallet, approve transactions, and interact with smart contracts or stablecoin transfers—all with just a few clicks.
+Here, we cover how to connect MetaMask using `window.ethereum`, request access to user accounts, and detect the selected network and address.
+
+### Before you start
+
+You’ll need:
+
+- A web app or frontend project (React, Next.js, or vanilla JS all work)
+- MetaMask installed in the browser (or the MetaMask mobile app with WebView)
+- A network that supports the stablecoin you’re using (e.g., USDC on Ethereum, Polygon, or Arbitrum)
+
+> **Note:** MetaMask injects the `window.ethereum` object into the browser, which your app can use to interact with the blockchain.
+
+### Connect MetaMask and request wallet access
+
+```js
+async function connectMetaMask() {
+  if (typeof window.ethereum === 'undefined') {
+    alert('MetaMask is not installed');
+    return;
+  }
+
+  try {
+    const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
+    const userAddress = accounts[0];
+    console.log('Connected address:', userAddress);
+  } catch (err) {
+    console.error('User rejected connection or other error:', err);
+  }
+}
+```
+
+Call this function when a user clicks a "Connect Wallet" button in your app.
+
+### Get network information
+Once connected, you can retrieve the active network’s chain ID to determine which network the user is on (e.g., Ethereum Mainnet, Polygon, etc.).
+```
+const chainId = await window.ethereum.request({ method: 'eth_chainId' });
+console.log('Connected to chain:', chainId);
+```
+To listen for changes in network or account, you can subscribe to events:
+```
+window.ethereum.on('accountsChanged', (accounts) => {
+  console.log('New account:', accounts[0]);
+});
+
+window.ethereum.on('chainChanged', (chainId) => {
+  window.location.reload(); // Reload to re-init app logic if needed
+});
+```
+### Sending stablecoins (ERC-20)
+Once MetaMask is connected, you can use web3.js or ethers.js to send tokens like USDC. See the Web3.js Send USDC guide for a full example.
+
+Just remember:
+
+- ERC-20 tokens require contract interaction (not native value: transfers)
+- You'll need the contract address and ABI
+- USDC uses 6 decimals, not 18
+
+### Adding networks (optional)
+If your app works on a network MetaMask doesn’t have by default (like Arbitrum or Base), you can prompt the user to add it:
+```
+await window.ethereum.request({
+  method: 'wallet_addEthereumChain',
+  params: [{
+    chainId: '0xa4b1', // Arbitrum One
+    chainName: 'Arbitrum One',
+    rpcUrls: ['https://arb1.arbitrum.io/rpc'],
+    nativeCurrency: { name: 'ETH', symbol: 'ETH', decimals: 18 },
+    blockExplorerUrls: ['https://arbiscan.io']
+  }]
+});
+```
+You can also request a network switch if the user is on the wrong chain:
+```
+await window.ethereum.request({
+  method: 'wallet_switchEthereumChain',
+  params: [{ chainId: '0xa4b1' }] // Arbitrum One
+});
+```
+
+### Next steps
+- Web3.js Send USDC – Full example of sending stablecoins via smart contract
+- Wallets for Teams – Learn how to scale access across internal roles
+- Handling Business Funds – Organize wallet flows for stablecoin payments
