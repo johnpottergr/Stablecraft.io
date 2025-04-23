@@ -1,0 +1,53 @@
+{
+    "name": "Stablecraft",
+    "logo": {
+      "light": "/logo/light.svg",
+      "dark": "/logo/dark.svg",
+      "href": "https://docs.stablecraft.io"
+    },
+    "favicon": "/favicon.svg",
+    "colors": {
+      "primary": "#2AB673"
+    },
+    "navigation": [
+        {
+            "group": "api-reference",
+            "pages": ["introduction", "authentication", "post-transaction","endpoint/create", "endpoint/delete", "endpoint/get", "endpoint/webhook", "stablecraft-pay/get-rates", "stablecraft-pay/get-transaction", "stablecraft-pay/get-wallets-by-id", "stablecraft-pay/get-wallets" ]
+          },
+          {
+            "group": "blog",
+            "pages": ["3-31-2025-getting-started-with-saucerswap", "4-05-2025-stablecoin-expiry-and-redemption-deadlines", "4-16-2025-stablecoins-and-smart-contract-rent", "4-20-2025-banking-hours-and-stablecoins"]
+          },
+          {
+            "group": "Docs",
+            "pages": ["business-implementation/cashing-out-to-fiat","business-implementation/connecting-to-your-POS",
+            "business-implementation/handling-business-funds", "business-implementation/stablecoin-accounting",
+            "business-implementation/taking-payments-online", "code-examples/hederal-payment-demo", "code-examples/metamask-integration",
+            "code-examples/sample-api-requests", "code-examples/web3js-send-USDC","intro/hello-stable-world", "intro/stablecoins-vs-fiat",
+            "intro/types-of-stablecoins", "intro/what-is-a-stablecoin", "protocols-and-networks/chains-with-stablecoins",
+            "protocols-and-networks/comparing-network-fees", "protocols-and-networks/l1-vs-l2-networks", "protocols-and-networks/well-known-stablecoins",
+            "quick-guide/accepting-payments", "quick-guide/fees & gas costs", "guick-guide/getting-started", "quick-guide/regulations-101",
+            "quick-guide/safety-tips", "quick-guide/wallet-setup", "stablecoin-mechanics/algorithmic-pegs","stablecoin-mechanics/dai-and-collateral", "stablecoin-mechanics/how-minting-works", "stablecoin-mechanics/peg-adjustment-logic", "stablecoin-mechanics/smart-contract-risks",
+            "wallets-and-custody/custody-options", "wallets-and-custody/hot-vs-cold-wallets", "wallets-and-custody/popular-wallet-brands", "wallets-and-custody/wallets-for-teams"
+        ]
+          },
+          {
+            "group": "essentials",
+            "pages": ["code", "images", "markdown", "navigation", "resuable-snippets", "settings", "snippet-intro"]
+          },
+
+          {
+            "group": "mintlify-docs",
+            "pages": ["mcp-overview", "api-integration", "index", "api-installation", "development", "introduction", "quickstart", "README" ]
+          },
+          {
+            "group": "getting-started",
+            "pages": ["gateway-integration", "overview", "wallet-setup"]
+          },
+          {
+            "group": "markdown-page",
+            "pages": ["index"]
+          }
+
+    ]
+  }
