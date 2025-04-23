@@ -9,6 +9,7 @@
   "colors": {
     "primary": "#2AB673"
   },
+  "theme": "mint",
   "navigation": [
       {
           "group": "api-reference",
