@@ -5,7 +5,8 @@ date: 2025-04-16
 
 Stablecoins are often treated as timeless assets—minted once, transferrable forever. But that assumption runs into a growing challenge across multiple blockchains: smart contract rent, state pruning, and rising storage costs. As networks mature and scale, they’re starting to make tradeoffs that could affect the long-term viability of smart contracts, including those that govern stablecoins.
 
-<!--truncate-->
+{/* ----truncate----- */}
+
 
 Many stablecoin users assume the balance held in their wallet is permanent and unassailable. But that balance lives inside smart contract state. If a blockchain changes how it handles old, inactive contracts—or implements rent on dormant state—those balances could be impacted in ways users never expected. In chains that prune or evict data, token contracts that haven’t seen recent activity could degrade, be offloaded, or even disappear.
 
