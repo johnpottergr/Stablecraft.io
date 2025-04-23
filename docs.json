@@ -1,0 +1,15 @@
+{
+    "name": "Stablecraft",
+    "theme": "mint",
+    "colors": {
+      "primary": "#2AB673"
+    },
+    "navigation": [
+      {
+        "group": "General",
+        "pages": [
+          "README"
+        ]
+      }
+    ]
+  }
