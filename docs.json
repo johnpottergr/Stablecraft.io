@@ -1,6 +1,9 @@
 {
     "name": "Stablecraft",
     "theme": "mint",
+    "colors": {
+      "primary": "#2AB673"
+    },
     "navigation": [
       {
         "title": "Home",
