@@ -1,13 +1,14 @@
 {
     "name": "Stablecraft",
+    "description": "Documentation for Stablecraft's stablecoin payment gateway and wallet services.",
     "theme": "mint",
     "colors": {
-      "primary": "#2AB673"
+        "primary": "#2AB673"
     },
     "navigation": [
-      {
-        "title": "Home",
-        "page": "README"
-      }
+        {
+            "title": "Home",
+            "page": "README"
+        }
     ]
-  }
+}
