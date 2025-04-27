@@ -9,20 +9,15 @@ The text below documents how we retrieve daily liquidity data for stablecoin poo
 
 Monitoring total value locked (TVL) in Uniswap pools helps identify stablecoin liquidity shifts that may signal early risk events.
 
-## API Endpoint
-
 **Endpoint**:
-
 ```bash
 https://api.thegraph.com/subgraphs/name/uniswap/uniswap-v2
 ```
 
 **Authentication:**
-
-None required.
+- None required.
 
 ## Example Query (GraphQL)
-
 ```graphql
 {
   pairDayDatas(
@@ -40,13 +35,11 @@ None required.
 
 ## Fields Monitored
 
-**Field**       	                     **Purpose**
-
-- reserveUSD	          Current liquidity (TVL) in USD
+**Field**       	  **Purpose**
+- reserveUSD	      Current liquidity (TVL) in USD
 - dailyVolumeUSD	  Daily trading volume (optional secondary signal)
 
 ## Example Response (truncated)
-
 ```json
  {
   "data": {
@@ -61,17 +54,15 @@ None required.
 }
 ```
 
-- date is in UNIX timestamp format (UTC midnight).
-- reserveUSD gives current liquidity.
-- dailyVolumeUSD shows daily volume for reference.
+- **date** is in UNIX timestamp format (UTC midnight).
+- **reserveUSD** gives current liquidity.
+- **dailyVolumeUSD** shows daily volume for reference.
 
 ## Monitoring Criteria
-
 - TVL Drop Flag: If liquidity (reserveUSD) decreases by more than 10% in 24 hours, pool is flagged for review.
 - Volume Spike Flag (optional): If dailyVolumeUSD spikes by more than 2x the 7-day average, the pool is flagged.
 
 ## Rate Limits and Notes
-
 - There are no strict rate limits, but it's best practice to poll once a day.
 - Uniswap V2 Subgraph is static; live updates are reflected with a minor delay (~minutes).
 - Stablecoin pools to monitor:

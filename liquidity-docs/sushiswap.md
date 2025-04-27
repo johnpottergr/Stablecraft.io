@@ -3,7 +3,7 @@ title: "SushiSwap Data API"
 sidebarLabel: "SushiSwap API"
 description: "Instructions for retrieving daily price data from SushiSwap using free public APIs."
 sidebar_position: 3
-slug: "/sushiswap-api"
+slug: "/liquidity-docs/sushiswap-api"
 ---
 ## Endpoint:
 https://api.thegraph.com/subgraphs/name/sushiswap/exchange

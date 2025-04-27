@@ -10,18 +10,15 @@ We retrieve daily liquidity data for stablecoin pools on SushiSwap using The Gra
 Monitoring stablecoin TVL (Total Value Locked) across decentralized exchanges, such as SushiSwap, helps detect early signs of liquidity stress.
 
 ## API Endpoint
-
 **Endpoint**:
-
 ```bash
 https://api.thegraph.com/subgraphs/name/sushiswap/exchange
 ```
 
 **Authentication:**
-None required.
+- None required.
 
 ## Example Query (GraphQL)
-
 ```graphql
 {
   pairDayDatas(
@@ -38,14 +35,12 @@ None required.
 ```
 
 ## Fields Monitored
+**Field**          **Purpose**
 
-**Field**       	                     **Purpose**
-
-- reserveUSD	          Current liquidity (TVL) in USD
+- reserveUSD	   Current liquidity (TVL) in USD
 - dailyVolumeUSD   Daily trading volume (optional secondary signal)
 
 ## Example Response (truncated)
-
 ```json
 {
   "data": {
