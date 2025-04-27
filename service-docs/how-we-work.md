@@ -1,7 +1,7 @@
 ---
 title: "How We Work"
 sidebarLabel: "How We Work"
-description: "What our documentation covers"
+description: "What we offer and what our documentation covers"
 sidebar_position: 2
 slug: /how-we-work
 ---

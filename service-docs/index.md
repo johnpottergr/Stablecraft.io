@@ -3,7 +3,7 @@ title: "Service Integrations"
 sidebarLabel: "Overview" 
 description: "Overview of payment integration options"
 sidebar_position: 1
-slug: "/service-docs/index"
+slug: "/service-docs/"
 ---
 Stablecraft helps you integrate modern stablecoin payment systems into your business safely, efficiently, and with full control over your assets.
 

@@ -32,7 +32,7 @@ export WALLET_PRIVATE_KEY=your_private_key_here
 
 If you're using a .env file, the format is the same:
 
-```
+```dotenv
 COINBASE_API_KEY=your_coinbase_api_key_here
 STRIPE_API_KEY=your_stripe_api_key_here
 WALLET_PRIVATE_KEY=your_private_key_here
