@@ -1,9 +1,8 @@
 ---
 title: "Stablecoin Stress Test API"
 description: "API documentation for calculating dynamic risk scores for stablecoins based on peg deviation, liquidity, volume, collateral quality, and other adjustable risk factors."
-sidebar_position: "1"
-keywords: "stablecoin risk,DeFi risk monitoring,stablecoin analytics,peg deviation,liquidity risk,Uniswap risk manager,decentralized finance"
-slug: "/stress-test.md"
+sidebar_position: "1" 
+slug: "/stress-test-docs"
 ---
 The Stablecoin Stress Test API dynamically calculates risk scores for major stablecoins based on real-time (or simulated) data and customizable risk factor weights.
 
