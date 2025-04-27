@@ -20,6 +20,7 @@ Using environment variables keeps sensitive keys out of your source code and ver
 Set your keys in your local environment or a secure `.env` file:
 
 ```bash
+
 # Coinbase Commerce
 export COINBASE_API_KEY=your_coinbase_api_key_here
 
@@ -29,6 +30,7 @@ export STRIPE_API_KEY=your_stripe_api_key_here
 # On-Chain Wallet or Contract (if applicable)
 export WALLET_PRIVATE_KEY=your_private_key_here
 
+```
 
 If you're using a .env file, the format is the same:
 
