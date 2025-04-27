@@ -10,7 +10,6 @@ The text below documents how we monitor daily trading volume for major stablecoi
 **Significant shifts in daily trading volume can signal changes in market activity, liquidity availability, or potential stress events affecting stablecoins.**
 
 We use CoinGecko’s API to retrieve daily volume data.
-
 ## Purpose
 Monitoring daily volume helps identify:
 
