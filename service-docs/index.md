@@ -3,7 +3,7 @@ title: "Why Stablecraft"
 sidebarLabel: "Overview" 
 description: "The services we offer"
 sidebar_position: 1
-slug: "/service-integrations"
+slug: "service-docs/service-docs"
 ---
 Stablecraft helps you integrate modern stablecoin payment systems into your business safely, efficiently, and with full control over your assets.
 
