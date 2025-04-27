@@ -2,11 +2,9 @@
 title: "Stablecoin TVL Monitoring with SushiSwap Subgraph"
 sidebarLabel: "TVL (SushiSwap)"
 description: "Retrieve daily stablecoin liquidity data from SushiSwap using The Graph's public subgraph API."
+sidebar_position: 4
 slug: "/risk-manager/tvl-sushiswap"
 ---
-
-# Stablecoin TVL Monitoring with SushiSwap Subgraph
-
 We retrieve daily liquidity data for stablecoin pools on SushiSwap using The Graph’s public subgraph API.
 
 Monitoring stablecoin TVL (Total Value Locked) across decentralized exchanges, such as SushiSwap, helps detect early signs of liquidity stress.

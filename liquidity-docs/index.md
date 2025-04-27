@@ -2,11 +2,9 @@
 title: "Liquidity API Overview"
 sidebarLabel: "Overview"
 description: "Overview of available endpoints and data sources for liquidity tracking, stablecoin dominance, and yield opportunities across Uniswap, SushiSwap, and Curve."
+sidebar_position: 1
 slug: "/liquidity-api"
 ---
-
-# Liquidity API Overview
-
 The text below documents how to retrieve daily liquidity metrics, stablecoin dominance statistics, and yield opportunities from decentralized exchanges (DEXs) using free public APIs.
 
 We currently support data access from:

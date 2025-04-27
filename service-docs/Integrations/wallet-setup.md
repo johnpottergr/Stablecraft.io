@@ -1,6 +1,9 @@
 ---
 title: "Wallet Setup & Management"
 sidebarLabel: "Wallet Setup"
+description: "Custodial and non-custodial wallet instructions"
+sidebar_position: 4
+slug: /wallet-setup
 ---
 Stablecoin payments require a reliable, secure wallet infrastructure for your business and customers.
 

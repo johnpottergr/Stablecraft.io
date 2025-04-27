@@ -2,11 +2,9 @@
 title: TVL Monitoring (Uniswap)
 sidebarLabel: TVL (Uniswap)
 description: Monitor stablecoin pool liquidity (TVL) on Uniswap using The Graph’s public subgraph API as part of the Stress Test framework.
+sidebar_position: "8"
 slug: /stress-test/uniswap-tvl
 ---
-
-# TVL Monitoring (Uniswap)
-
 The text below documents how we retrieve and monitor stablecoin pool liquidity (Total Value Locked, or TVL) on Uniswap as part of the Stress Test system.
 
 Monitoring TVL on decentralized exchanges like Uniswap helps detect early signs of liquidity stress, market exits, or weakening peg support for stablecoins.

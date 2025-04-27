@@ -5,9 +5,6 @@ sidebar_position: "1"
 keywords: "stablecoin risk,DeFi risk monitoring,stablecoin analytics,peg deviation,liquidity risk,Uniswap risk manager,decentralized finance"
 slug: "/stress-test.md"
 ---
-
-# Stablecoin Stress Test API
-
 The Stablecoin Stress Test API dynamically calculates risk scores for major stablecoins based on real-time (or simulated) data and customizable risk factor weights.
 
 Use this API to monitor stablecoin stability, detect emerging risks, and fine-tune assessment models based on your own risk preferences.

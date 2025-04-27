@@ -2,11 +2,9 @@
 title: "Peg Deviation Monitoring"
 sidebarLabel: "Peg Deviation"
 description: "Monitor stablecoin peg stability using CoinGecko's API as part of the Stress Test framework."
+sidebar_position: "3"
 slug: "/stress-test/peg-deviation"
 ---
-
-# Peg Deviation Monitoring
-
 The text below documents how we monitor stablecoin price stability, also known as "peg deviation," as part of the Stress Test system.
 
 **Stablecoins are designed to maintain a 1.00 USD value. Deviations from this peg, even minor ones, can serve as early warning signs of risk events, liquidity strain, or a loss of market confidence.**

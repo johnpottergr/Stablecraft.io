@@ -1,6 +1,9 @@
 ---
 title: "API Credential Setup"
 sidebarLabel: "Credentials"
+description: "Create and safely store API credentials for payment vendors, your wallet, or smart contract"
+sidebar_position: 3
+slug: /credential-setup
 ---
 When integrating with stablecoin services, securely managing your API keys is critical.
 

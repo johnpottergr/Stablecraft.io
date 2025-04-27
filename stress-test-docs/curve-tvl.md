@@ -2,11 +2,9 @@
 title: "TVL Monitoring (Curve)"
 sidebarLabel: "TVL (Curve)"
 description: "Monitor stablecoin pool liquidity (TVL) on Curve Finance using Curve's public API as part of the Stress Test framework."
+sidebar_position: "6"
 slug: "/stress-test/curve-tvl"
 ---
-
-# TVL Monitoring (Curve)
-
 The text below documents how we retrieve and monitor stablecoin pool liquidity (Total Value Locked, or TVL) on Curve Finance as part of the Stress Test system.
 
 **Monitoring liquidity across stablecoin pools provides important insights into potential redemption events, liquidity withdrawals, or changes in user confidence.**

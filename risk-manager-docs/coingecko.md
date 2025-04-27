@@ -2,11 +2,9 @@
 title: "Peg Monitoring with CoinGecko"
 sidebarLabel: "Peg Monitoring"
 description: "Retrieve and evaluate stablecoin prices using the CoinGecko public API to monitor peg stability."
+sidebar_position: 2
 slug: "/risk-manager/peg-monitoring"
 ---
-
-# Peg Monitoring with CoinGecko
-
 The text below documents how we retrieve and monitor stablecoin peg stability using the CoinGecko Free Public API.
 
 Peg stability is determined by comparing the current price of each stablecoin to the \$1.00 USD target. Deviations greater than ±0.5% are flagged for review.

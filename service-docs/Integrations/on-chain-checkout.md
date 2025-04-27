@@ -1,6 +1,9 @@
 ---
 title: "On-Chain Checkout Setup"
 sidebarLabel: "On-Chain Checkout"
+description: "Directly send stablecoins to a smart contract or wallet address you control"
+sidebar_position: 2
+slug: /on-chain-checkout
 ---
 We offer on-chain checkout integration if you prefer full Web3 control over your payments.
 

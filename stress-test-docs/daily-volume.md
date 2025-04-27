@@ -2,11 +2,9 @@
 title: "Daily Volume Monitoring"
 sidebarLabel: "Daily Volume"
 description: "Track stablecoin trading volume using CoinGecko's API as part of the Stress Test framework."
+sidebar_position: "2"
 slug: "/stress-test/daily-volume"
 ---
-
-# Daily Volume Monitoring
-
 The text below documents how we monitor daily trading volume for major stablecoins as part of the Stress Test system.
 
 **Significant shifts in daily trading volume can signal changes in market activity, liquidity availability, or potential stress events affecting stablecoins.**

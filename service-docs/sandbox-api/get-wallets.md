@@ -1,6 +1,8 @@
 ---
 title: "List Wallets"
 sidebarLabel: "GET /wallets"
+sidebar_position: 4
+slug: /list-wallets
 ---
 Retrieve all wallets associated with your Stablecraft account, along with their balances and asset types.
 

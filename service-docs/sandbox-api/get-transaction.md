@@ -1,6 +1,9 @@
 ---
 title: "Get Transaction by ID"
 sidebarLabel: "GET /transactions/:id"
+description: "Retrieve detailed information about specific stablecoin transactions using their unique transaction ID"
+sidebar_position: 2
+slug: /get-transaction-by-id
 ---
 Retrieve detailed information about a specific stablecoin transaction by providing its unique transaction ID.
 

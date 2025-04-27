@@ -2,11 +2,9 @@
 title: "Supply Changes Monitoring"
 sidebarLabel: "Supply Changes"
 description: "Track changes in stablecoin circulating supply using CoinGecko's API as part of the Stress Test framework."
+sidebar_position: "5"
 slug: "/stress-test/supply-changes"
 ---
-
-# Supply Changes Monitoring
-
 The text below explains how we monitor changes in the circulating supply of stablecoins as part of the Stress Test system.
 
 **Large shifts in supply — either through minting (expansion) or burning (contraction) — can serve as early indicators of stress events, liquidity shifts, or issuer-driven interventions.**

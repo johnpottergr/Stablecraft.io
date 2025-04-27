@@ -2,11 +2,9 @@
 title: "TVL and Yield Monitoring with Curve API"
 sidebarLabel: "TVL and Yield (Curve)"
 description: "Retrieve stablecoin pool liquidity and yield opportunities using the Curve Finance public REST API."
+sidebar_position: 3
 slug: "/risk-manager/tvl-curve"
 ---
-
-# TVL and Yield Monitoring with Curve API
-
 The text below documents how we retrieve daily stablecoin pool liquidity (TVL) and yield opportunities from Curve Finance.
 
 **Curve’s public API provides real-time data on all pools, including total value locked (TVL) and estimated yield (APY).**

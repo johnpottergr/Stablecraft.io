@@ -1,6 +1,9 @@
 ---
 title: "Get Wallet by ID"
 sidebarLabel: "GET /wallets/:id"
+description: "Retrieve detailed information about a specific wallet by providing its unique wallet ID"
+sidebar_position: 3
+slug: /get-wallet-by-id
 ---
 Retrieve detailed information about a specific wallet by providing its unique wallet ID.
 

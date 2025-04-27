@@ -2,20 +2,16 @@
 title: "SushiSwap Data API"
 sidebarLabel: "SushiSwap API"
 description: "Instructions for retrieving daily price data from SushiSwap using free public APIs."
+sidebar_position: 3
+slug: "/sushiswap-api"
 ---
-
-# SushiSwap Data API
-
 ## Endpoint:
-
 https://api.thegraph.com/subgraphs/name/sushiswap/exchange
 
 ## Authentication:
-
 - None required
 
 ## Query Example (GraphQL query):
-
 ```graphql
 Query Example (for daily liquidity and volume):
 {

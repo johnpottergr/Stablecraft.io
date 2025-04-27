@@ -2,11 +2,9 @@
 title: "TVL Monitoring (SushiSwap)"
 sidebarLabel: "TVL (SushiSwap)"
 description: "Monitor stablecoin pool liquidity (TVL) on SushiSwap using The Graph’s public subgraph API as part of the Stress Test framework."
+sidebar_position: "7"
 slug: "/stress-test/sushiswap-tvl"
 ---
-
-# TVL Monitoring (SushiSwap)
-
 The text below documents how we retrieve and monitor stablecoin pool liquidity (Total Value Locked, or TVL) on SushiSwap as part of the Stress Test system.
 
 **Monitoring liquidity across decentralized exchanges like SushiSwap provides critical visibility into emerging risks associated with stablecoin liquidity drains or redemption pressure.**

@@ -2,11 +2,9 @@
 title: "Stablecoin TVL Monitoring with Uniswap Subgraph"
 sidebarLabel: "TVL (Uniswap)"
 description: "Retrieve daily stablecoin liquidity data from Uniswap using The Graph's public subgraph API."
+sidebar_position: 5
 slug: "/risk-manager/tvl-uniswap"
 ---
-
-# Stablecoin TVL Monitoring with Uniswap Subgraph
-
 The text below documents how we retrieve daily liquidity data for stablecoin pools on Uniswap using The Graph’s public subgraph API.
 
 Monitoring total value locked (TVL) in Uniswap pools helps identify stablecoin liquidity shifts that may signal early risk events.

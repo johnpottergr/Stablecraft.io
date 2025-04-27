@@ -2,12 +2,10 @@
 title: "Stablecoin Risk Manager"
 sidebarLabel: "Risk Manager"
 description: "Monitor stablecoin risks by tracking pool liquidity, peg stability, audit recency, and known risk factors across Uniswap, SushiSwap, and Curve."
+sidebar_position: 1
 slug: "/risk-manager"
 ---
-
-# Stablecoin Risk Manager
-
-**The Risk Manager tracks critical stability indicators for major stablecoins, combining decentralized liquidity data with audit history and known risk factors.**
+The Risk Manager tracks critical stability indicators for major stablecoins, combining decentralized liquidity data with audit history and known risk factors.
 
 This section provides daily insights into:
 

@@ -1,6 +1,9 @@
 ---
 title: "Coinbase Commerce Integration"
 sidebarLabel: "Coinbase Commerce"
+description: "Integrate with Coinbase to receive payment confirmation and status updates."
+sidebar_position: 1
+slug: /coinbase-integration
 ---
 We help you connect your store or application to Coinbase Commerce to accept USDC and other stablecoins.
 

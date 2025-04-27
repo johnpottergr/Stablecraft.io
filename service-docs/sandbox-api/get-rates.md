@@ -1,6 +1,9 @@
 ---
 title: "Get Stablecoin Conversion Rates"
 sidebarLabel: "GET /rates"
+description: "Retrieve the latest conversion rates for supported stablecoins relative to USD"
+sidebar_position: 1
+slug: /get-rates
 ---
 Retrieve the latest conversion rates for supported stablecoins (e.g., USDC, USDT, DAI) relative to USD.
 

@@ -2,11 +2,9 @@
 title: "Sentiment Analysis"
 sidebarLabel: "Sentiment"
 description: "Monitor crypto sentiment trends for stablecoins using LunarCrush's API as part of the Stress Test framework."
+sidebar_position: "4"
 slug: "/stress-test/sentiment-analysis"
 ---
-
-# Sentiment Analysis
-
 The text below documents how we retrieve and evaluate sentiment trends for major stablecoins to enhance early warning detection within the Stress Test system.
 
 **We use LunarCrush’s API to track social and market sentiment, which is a supplemental indicator of potential risk changes not immediately visible through on-chain metrics alone.**
