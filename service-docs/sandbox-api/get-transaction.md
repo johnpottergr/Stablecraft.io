@@ -5,10 +5,7 @@ description: "Retrieve detailed information about specific stablecoin transactio
 sidebar_position: 2
 slug: /get-transaction-by-id
 ---
-Retrieve detailed information about a specific stablecoin transaction by providing its unique transaction ID.
-
 ## 📄 Endpoint
-
 ```http
 GET /transactions/:id
 ```
@@ -17,22 +14,18 @@ GET /transactions/:id
 - Replace :id with the unique ID of the transaction you want to retrieve.
 
 ## 🔐 Authentication
-
 Include your API key as a Bearer token in the request header:
-
 ```http
 Authorization: Bearer YOUR_API_KEY
 ```
 
 ## 📥 Sample Request
-
 ```bash
 curl https://api.stablepay.dev/v1/transactions/txn_789 \
   -H "Authorization: Bearer YOUR_API_KEY"
 ```
 
 Or using JavaScript:
-
 ```Javascript
 fetch('https://api.stablepay.dev/v1/transactions/txn_789', {
   headers: {
@@ -44,7 +37,6 @@ fetch('https://api.stablepay.dev/v1/transactions/txn_789', {
 ```
 
 ## 📤 Sample Response
-
 ```json
 {
   "id": "txn_789",
@@ -58,9 +50,7 @@ fetch('https://api.stablepay.dev/v1/transactions/txn_789', {
   "transaction_hash": "0xdeadbeef1234567890abcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdef"
 }
 ```
-
 **Field                       Description**
-
 - id:                          Unique identifier for the transaction
 - status:                   Current transaction status (pending, confirmed, or failed)
 - asset:                    Stablecoin used in the transaction
@@ -72,7 +62,6 @@ fetch('https://api.stablepay.dev/v1/transactions/txn_789', {
 - transaction_hash:  Blockchain hash of the transaction (for explorers)
 
 ## ⚠️ Notes
-
 - Based on network conditions, transaction statuses can change from pending to confirmed or failed.
 - You can use the transaction_hash to look up the transaction on a blockchain explorer like Etherscan.
 - If the transaction ID does not exist, the API returns a 404 Not Found error.

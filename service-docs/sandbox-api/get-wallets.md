@@ -1,11 +1,10 @@
 ---
 title: "List Wallets"
+description: "Retrieve all wallets associated with your Stablecraft account, along with their balances and asset types"
 sidebarLabel: "GET /wallets"
 sidebar_position: 4
 slug: "/list-wallets"
 ---
-Retrieve all wallets associated with your Stablecraft account, along with their balances and asset types.
-
 ## 📄 Endpoint
 ```http
 GET /wallets
@@ -25,7 +24,6 @@ curl https://api.stablecraft.io/v1/wallets \
 ```
 
 Or using JavaScript:
-
 ```Javascript
 fetch('https://api.stablecraft.io/v1/wallets', {
   headers: {

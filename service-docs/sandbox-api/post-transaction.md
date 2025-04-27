@@ -5,22 +5,17 @@ description: "Create and send a stablecoin transaction from one of your wallets 
 sidebar_position: 5
 slug: /send-a-payment
 ---
-Create and send a stablecoin transaction from one of your wallets to a specified recipient address.
-
 ## 📄 Endpoint
-
 ```http
 POST /transactions
 ```
 
 ## 🔐 Authentication
-
 ```http
 Authorization: Bearer YOUR_API_KEY
 ```
 
 ## 📥 Sample Request
-
 ```bash
 curl -X POST https://api.stablecraft.io/v1/transactions \
   -H "Authorization: Bearer YOUR_API_KEY" \
@@ -54,7 +49,6 @@ fetch('https://api.stablecraft.io/v1/transactions', {
 ```
 
 ## 📤 Sample Response
-
 ```json
 {
   "id": "txn_789",
@@ -68,7 +62,6 @@ fetch('https://api.stablecraft.io/v1/transactions', {
 ```
 
 ## ⚠️ Notes
-
 - The transaction status will initially be pending.
 - Webhook events (optional) can notify your system when the transaction is confirmed on-chain.
 - Amounts must match the asset’s decimal conventions (e.g., 2 decimals for USDC).
