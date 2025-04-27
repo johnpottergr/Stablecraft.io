@@ -10,7 +10,6 @@ The Stablecoin Stress Test API dynamically calculates risk scores for major stab
 Use this API to monitor stablecoin stability, detect emerging risks, and fine-tune assessment models based on your own risk preferences.
 
 ## Risk Factors
-
 Each stablecoin risk score is calculated from the following factors:
 
 | Factor                 | Description                                           |
@@ -26,11 +25,9 @@ Each factor can be individually weighted, and total weighting must equal 100%.
 ## Endpoints
 
 ### GET `/stress-test/scores`
-
 - Returns the current risk scores for all tracked stablecoins.
 
 #### Example Response:
-
 ```json
 [
   {
@@ -51,11 +48,9 @@ Each factor can be individually weighted, and total weighting must equal 100%.
 ```
 
 ### GET `/stress-test/weights`
-
 - Returns the current weighting setup for each risk factor.
 
 #### Example Response:
-
 ```json
 {
   "peg_deviation": 25,
@@ -68,12 +63,10 @@ Each factor can be individually weighted, and total weighting must equal 100%.
 ```
 
 ### POST /stress-test/weights
-
 - Allows updating the custom risk factor weights.
   _(Admin access required.)_
 
 **Payload Example:**
-
 ```json
 {
   "peg_deviation": 30,
@@ -86,7 +79,6 @@ Each factor can be individually weighted, and total weighting must equal 100%.
 ```
 
 ## Notes
-
 **Risk Score Ranges:**
 
 - 0–10 → Low Risk
@@ -94,13 +86,10 @@ Each factor can be individually weighted, and total weighting must equal 100%.
 - 20\+ → High Risk
 
 **Price Source:**
-
 - Prices are fetched from on-chain oracles and major exchanges.
 
 **Collateral Data:**
-
 - Updated periodically based on issuer disclosures and third-party audits.
 
 **Refresh Interval:**
-
 - Risk scores are recalculated hourly or on major data events.
