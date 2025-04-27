@@ -20,6 +20,38 @@
         ]
       },
       {
+        "group": "Stress Test Pages",
+        "pages": [
+          "stress-test-docs/index",
+          "stress-test-docs/daily-volume",
+          "stress-test-docs/peg-deviation",
+          "stress-test-docs/sentiment-analysis",
+          "stress-test-docs/supply-changes",
+          "stress-test-docs/curve-tvl",
+          "stress-test-docs/sushiswap-tvl",
+          "stress-test-docs/uniswap-tvl"
+        ]
+      },
+      {
+        "group": "Risk Manager Pages",
+        "pages": [
+          "risk-manager-docs/index",
+          "risk-manager-docs/coingecko",
+          "risk-manager-docs/curve",
+          "risk-manager-docs/sushiswap",
+          "risk-manager-docs/uniswap"
+        ]
+      },
+      {
+        "group": "Liquidity Pages",
+        "pages": [
+          "liquidity-docs/index",
+          "liquidity-docs/curve",
+          "liquidity-docs/sushiswap",
+          "liquidity-docs/uniswap"
+        ]
+      },
+      {
         "group": "Sandbox API",
         "pages": [
           "sandbox-api/get-wallets",
