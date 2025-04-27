@@ -1,7 +1,7 @@
 ---
 title: "Wallet Setup & Management"
 sidebarLabel: "Wallet Setup"
-description: "Custodial and non-custodial wallet instructions"
+description: "Custodial and non-custodial wallet setup instructions"
 sidebar_position: 4
 slug: /wallet-setup
 ---
@@ -23,7 +23,7 @@ At Stablecraft, we guide you through the wallet setup process based on your need
 - Wallets where **you** control the private keys directly.
 - Full ownership over funds without relying on intermediaries.
 - Increased security and responsibility (backup and recovery needed).
-- Good examples: MetaMask, Ledger hardware wallets, and smart contract wallets.
+- Wallet examples: MetaMask, Ledger hardware wallets, and smart contract wallets.
 
 ## 🔧 Our Wallet Setup Process
 
