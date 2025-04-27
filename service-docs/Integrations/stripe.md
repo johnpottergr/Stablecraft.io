@@ -1,15 +1,13 @@
 ---
-title: Stripe Crypto Integration
-sidebarLabel: Stripe
+title: "Stripe Crypto Integration"
+sidebarLabel: "Stripe"
 ---
 
 # Stripe Crypto Integration (Early Access)
 
-Stripe has introduced limited support for stablecoin-based payments, enabling businesses to accept or pay out using **USDC** on selected blockchains such as **Ethereum**, **Solana**, and **Polygon**.
+Stripe has introduced limited support for stablecoin-based payments, allowing businesses to accept or make payments using **USDC** on select blockchains, including **Ethereum**, **Solana**, and **Polygon**.
 
-While Stripe's crypto features are still expanding, Stablecraft can help you prepare your platform for stablecoin-enabled checkout or payout options.
-
----
+While Stripe's crypto features are expanding, Stablecraft can help you prepare your platform for stablecoin-enabled checkout or payout options.
 
 ## 🚀 Stripe Crypto Overview
 
@@ -25,17 +23,13 @@ While Stripe's crypto features are still expanding, Stablecraft can help you pre
 
 1. **Apply for Stripe Crypto Access**
    Not all Stripe accounts have crypto access by default. We'll guide you through the application process if needed.
-
 2. **Set Up Payout Capabilities**
    If you're paying vendors or partners, we help configure Stripe Crypto payouts using the Stripe API.
-
 3. **Prepare for Stablecoin Checkout**
    For businesses interested in stablecoin checkout, we help:
    - Configure Web3-ready wallet fields
    - Manage KYC and compliance checks
    - Monitor Stripe updates for expanding stablecoin features
-
----
 
 ## 🧩 Example: Initiating a Crypto Payout via Stripe API
 
@@ -49,13 +43,14 @@ curl https://api.stripe.com/v1/payouts \
   -d method=crypto \
   -d destination="crypto_wallet_address_here"
 ```
+
 **Note**: The destination field requires a properly whitelisted crypto address through Stripe's platform.
 
 ## ⚠️ Important Considerations
 
-- Crypto payouts are subject to compliance reviews and approval by Stripe.
+- Crypto payouts are subject to Stripe's review and approval for compliance purposes.
 - Stablecoin checkout functionality may not be available for all businesses or regions yet.
-- Gas fees may be absorbed by the customer or business depending on configuration.
+- Depending on the configuration, the customer or business may absorb gas fees.
 
 ## 📚 Additional Resources
 

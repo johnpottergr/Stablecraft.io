@@ -1,7 +1,7 @@
 ---
-title: SushiSwap Data API
-sidebarLabel: SushiSwap API
-description: Instructions for retrieving daily price data from SushiSwap using free public APIs.
+title: "SushiSwap Data API"
+sidebarLabel: "SushiSwap API"
+description: "Instructions for retrieving daily price data from SushiSwap using free public APIs."
 ---
 
 # SushiSwap Data API
@@ -12,7 +12,7 @@ https://api.thegraph.com/subgraphs/name/sushiswap/exchange
 
 ## Authentication:
 
-- None required.
+- None required
 
 ## Query Example (GraphQL query):
 

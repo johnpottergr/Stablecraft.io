@@ -1,18 +1,9 @@
 ---
 title: "Stablecoin Stress Test API"
 description: "API documentation for calculating dynamic risk scores for stablecoins based on peg deviation, liquidity, volume, collateral quality, and other adjustable risk factors."
-sidebar_position: 1
-keywords:
-  - stablecoin risk
-  - DeFi risk monitoring
-  - stablecoin analytics
-  - peg deviation
-  - liquidity risk
-  - Uniswap risk manager
-  - decentralized finance
-hide_title: false
-hide_table_of_contents: false
-slug: /stress-test.md
+sidebar_position: "1"
+keywords: "stablecoin risk,DeFi risk monitoring,stablecoin analytics,peg deviation,liquidity risk,Uniswap risk manager,decentralized finance"
+slug: "/stress-test.md"
 ---
 
 # Stablecoin Stress Test API
@@ -25,23 +16,24 @@ Use this API to monitor stablecoin stability, detect emerging risks, and fine-tu
 
 Each stablecoin risk score is calculated from the following factors:
 
-| Factor | Description |
-|:---|:---|
-| Peg Deviation | Magnitude and frequency of price drifting from $1.00 |
-| Volume Volatility | Variance in trading volume over time |
-| Supply Changes |
-| Liquidity Change | TVL shifts across key pools and chains |
-| Collateral Quality | Risk level of the assets backing the stablecoin |
-| Sentiment Analysis | Social/media signals about stability or risk events |
+| Factor                 | Description                                           |
+| :--------------------- | :---------------------------------------------------- |
+| **Peg Deviation**      | Magnitude and frequency of price drifting from \$1.00 |
+| **Volume Volatility**  | Variance in trading volume over time                  |
+| **Liquidity Change**   | TVL shifts across key pools and chains                |
+| **Collateral Quality** | Risk level of the assets backing the stablecoin       |
+| **Sentiment Analysis** | Social/media signals about stability or risk events   |
 
 Each factor can be individually weighted, and total weighting must equal 100%.
 
 ## Endpoints
 
 ### GET `/stress-test/scores`
+
 - Returns the current risk scores for all tracked stablecoins.
 
 #### Example Response:
+
 ```json
 [
   {
@@ -62,9 +54,11 @@ Each factor can be individually weighted, and total weighting must equal 100%.
 ```
 
 ### GET `/stress-test/weights`
+
 - Returns the current weighting setup for each risk factor.
 
 #### Example Response:
+
 ```json
 {
   "peg_deviation": 25,
@@ -77,10 +71,12 @@ Each factor can be individually weighted, and total weighting must equal 100%.
 ```
 
 ### POST /stress-test/weights
+
 - Allows updating the custom risk factor weights.
-*(Admin access required.)*
+  _(Admin access required.)_
 
 **Payload Example:**
+
 ```json
 {
   "peg_deviation": 30,
@@ -95,17 +91,19 @@ Each factor can be individually weighted, and total weighting must equal 100%.
 ## Notes
 
 **Risk Score Ranges:**
+
 - 0–10 → Low Risk
 - 10–20 → Moderate Risk
-- 20+ → High Risk
+- 20\+ → High Risk
 
 **Price Source:**
+
 - Prices are fetched from on-chain oracles and major exchanges.
 
 **Collateral Data:**
+
 - Updated periodically based on issuer disclosures and third-party audits.
 
 **Refresh Interval:**
+
 - Risk scores are recalculated hourly or on major data events.
-
-

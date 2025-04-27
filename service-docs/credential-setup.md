@@ -1,6 +1,6 @@
 ---
-title: API Credential Setup
-sidebarLabel: Credentials
+title: "API Credential Setup"
+sidebarLabel: "Credentials"
 ---
 
 # API Credential Setup
@@ -13,11 +13,11 @@ We’ll help you create and safely store credentials for:
 - **Stripe**
 - **Your Wallet or Smart Contract**
 
-Using environment variables keeps sensitive keys out of your source code and version control systems like Git.
+Using environment variables keeps sensitive keys out of your source code and version control systems, such as Git.
 
 ## 🛡 Storing API Keys Securely
 
-Set your keys in your local environment or in a secure `.env` file:
+Set your keys in your local environment or a secure `.env` file:
 
 ```bash
 # Coinbase Commerce
@@ -29,24 +29,23 @@ export STRIPE_API_KEY=your_stripe_api_key_here
 # On-Chain Wallet or Contract (if applicable)
 export WALLET_PRIVATE_KEY=your_private_key_here
 ```
+
 If you're using a .env file, the format is the same:
+
 ```
 COINBASE_API_KEY=your_coinbase_api_key_here
 STRIPE_API_KEY=your_stripe_api_key_here
 WALLET_PRIVATE_KEY=your_private_key_here
 ```
+
 Then load your environment variables into your app securely at runtime.
 
-:::tip
-Never hardcode API keys directly into your JavaScript, React, or server files.
-:::
+**Tip**: Never hardcode API keys directly into your JavaScript, React, or server files. :::
 
 ## Key Management Best Practices
 
 - Rotate your API keys periodically.
 - Limit API key permissions to only what is needed.
-- Use different keys for development, staging, and production environments
+- Use different keys for development, staging, and production environments.
 
 ---
-
-

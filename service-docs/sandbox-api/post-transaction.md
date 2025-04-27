@@ -1,13 +1,11 @@
 ---
-title: Send Payment
-sidebarLabel: POST /transactions
+title: "Send Payment"
+sidebarLabel: "POST /transactions"
 ---
 
 # Send a Stablecoin Payment
 
 Create and send a stablecoin transaction from one of your wallets to a specified recipient address.
-
----
 
 ## 📄 Endpoint
 
@@ -34,7 +32,9 @@ curl -X POST https://api.stablecraft.io/v1/transactions \
     "asset": "USDC"
   }'
 ```
+
 Or using JavaScript:
+
 ```javascript
 fetch('https://api.stablecraft.io/v1/transactions', {
   method: 'POST',
@@ -69,6 +69,6 @@ fetch('https://api.stablecraft.io/v1/transactions', {
 
 ## ⚠️ Notes
 
-- Transaction status will initially be pending.
+- The transaction status will initially be pending.
 - Webhook events (optional) can notify your system when the transaction is confirmed on-chain.
 - Amounts must match the asset’s decimal conventions (e.g., 2 decimals for USDC).

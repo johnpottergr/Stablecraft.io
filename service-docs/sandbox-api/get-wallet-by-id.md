@@ -1,19 +1,18 @@
 ---
-title: Get Wallet by ID
-sidebarLabel: GET /wallets/:id
+title: "Get Wallet by ID"
+sidebarLabel: "GET /wallets/:id"
 ---
 
 # Get Wallet by ID
 
 Retrieve detailed information about a specific wallet by providing its unique wallet ID.
 
----
-
 ## 📄 Endpoint
 
 ```http
 GET /wallets/:id
 ```
+
 - Base URL: https://api.stablecraft.io/v1
 - Replace :id with the unique ID of the wallet you want to retrieve.
 
@@ -33,6 +32,7 @@ curl https://api.stablepay.dev/v1/wallets/wallet_123 \
 ```
 
 Or using JavaScript:
+
 ```Javascript
 fetch('https://api.stablepay.dev/v1/wallets/wallet_123', {
   headers: {

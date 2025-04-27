@@ -1,20 +1,17 @@
 ---
-title: Peg Deviation Monitoring
-sidebarLabel: Peg Deviation
-description: Monitor stablecoin peg stability using CoinGecko's API as part of the Stress Test framework.
-slug: /stress-test/peg-deviation
+title: "Peg Deviation Monitoring"
+sidebarLabel: "Peg Deviation"
+description: "Monitor stablecoin peg stability using CoinGecko's API as part of the Stress Test framework."
+slug: "/stress-test/peg-deviation"
 ---
 
 # Peg Deviation Monitoring
 
-The text below documents how we monitor stablecoin price stability ("peg deviation") as part of the Stress Test system.
+The text below documents how we monitor stablecoin price stability, also known as "peg deviation," as part of the Stress Test system.
 
-Stablecoins are designed to maintain a 1.00 USD value.
-Deviations from this peg, even minor ones, can serve as early warning indicators of risk events, liquidity strain, or market loss of confidence.
+**Stablecoins are designed to maintain a 1.00 USD value. Deviations from this peg, even minor ones, can serve as early warning signs of risk events, liquidity strain, or a loss of market confidence.**
 
 We use CoinGecko’s API to retrieve daily stablecoin price data.
-
----
 
 ## Purpose
 
@@ -24,16 +21,16 @@ Monitoring stablecoin peg deviation enables detection of:
 - Disruptions in liquidity or arbitrage mechanisms
 - Early signs of depegging risk before on-chain liquidity dries up
 
----
-
 ## API Endpoint
 
 **Endpoint**:
+
 ```bash
 GET https://api.coingecko.com/api/v3/coins/markets
 ```
 
 **Query Parameters:**
+
 - vs_currency=usd
 - ids=usd-coin,dai,tether,trueusd,frax
 
@@ -62,16 +59,18 @@ curl -X GET "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=
 
 ## Important Fields
 
-**Field**	     **Purpose**
-- current_price	 Real-time price of the stablecoin in USD
+**Field**       	                   **Purpose**
+
+- **current_price	** Real-time price of the stablecoin in USD
 
 ## Peg Deviation Evaluation Criteria
 
-We track the absolute deviation from $1.00:
-- Stable (Low Risk): Price between $0.995 and $1.005
-- Moderate Risk: Price between $0.990–$0.995 or $1.005–$1.010
-- High Risk: Price outside $0.990–$1.010
-Prices updated daily are compared to these thresholds to assign a Risk Score.
+We track the absolute deviation from \$1.00:
+
+- **Stable (Low Risk):** Price between $0.995 and $1.005
+- **Moderate Risk:** Price between $0.990–$0.995 or $1.005–$1.010
+- **High Risk:** Price outside $0.990–$1.010
+- Prices updated daily are compared to these thresholds to assign a Risk Score.
 
 ## Rate Limits and Notes
 

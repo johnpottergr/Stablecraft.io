@@ -1,7 +1,7 @@
 ---
-title: UniSwap Data API
-sidebarLabel: UniSwap API
-description: Instructions for retrieving daily price data, pool depth data, and stablecoin dominance data from UniSwap using free public APIs.
+title: "UniSwap Data API"
+sidebarLabel: "UniSwap API"
+description: "Instructions for retrieving daily price data, pool depth data, and stablecoin dominance data from UniSwap using free public APIs."
 ---
 
 # UniSwap Data API
@@ -12,7 +12,7 @@ https://api.thegraph.com/subgraphs/name/uniswap/uniswap-v2
 
 ## Authentication:
 
-- None required.
+- None required
 
 ## Query Example (GraphQL query):
 

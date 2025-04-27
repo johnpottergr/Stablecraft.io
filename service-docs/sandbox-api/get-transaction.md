@@ -1,19 +1,18 @@
 ---
-title: Get Transaction by ID
-sidebarLabel: GET /transactions/:id
+title: "Get Transaction by ID"
+sidebarLabel: "GET /transactions/:id"
 ---
 
 # Get Transaction by ID
 
 Retrieve detailed information about a specific stablecoin transaction by providing its unique transaction ID.
 
----
-
 ## 📄 Endpoint
 
 ```http
 GET /transactions/:id
 ```
+
 - Base URL: https://api.stablecraft.io/v1
 - Replace :id with the unique ID of the transaction you want to retrieve.
 
@@ -33,6 +32,7 @@ curl https://api.stablepay.dev/v1/transactions/txn_789 \
 ```
 
 Or using JavaScript:
+
 ```Javascript
 fetch('https://api.stablepay.dev/v1/transactions/txn_789', {
   headers: {
@@ -59,22 +59,20 @@ fetch('https://api.stablepay.dev/v1/transactions/txn_789', {
 }
 ```
 
-**Field: Description**
+**Field                       Description**
 
-- id:               Unique identifier for the transaction
-- status:           Current transaction status (pending, confirmed, or failed)
-- asset:            Stablecoin used in the transaction
-- amount:           Amount transferred
-- from_wallet_id:   ID of the wallet that sent the transaction
-- to_address:       Blockchain address receiving the funds
-- created_at:       When the transaction was initiated
-- confirmed_at:     When the transaction was confirmed on-chain (if confirmed)
-- transaction_hash: Blockchain hash of the transaction (for explorers)
+- id:                          Unique identifier for the transaction
+- status:                   Current transaction status (pending, confirmed, or failed)
+- asset:                    Stablecoin used in the transaction
+- amount:                 Amount transferred
+- from_wallet_id:     ID of the wallet that sent the transaction
+- to_address:           Blockchain address receiving the funds
+- created_at:            When the transaction was initiated
+- confirmed_at:        When the transaction was confirmed on-chain (if confirmed)
+- transaction_hash:  Blockchain hash of the transaction (for explorers)
 
 ## ⚠️ Notes
 
-- Transaction statuses can change from pending to confirmed or failed based on network conditions.
+- Based on network conditions, transaction statuses can change from pending to confirmed or failed.
 - You can use the transaction_hash to look up the transaction on a blockchain explorer like Etherscan.
 - If the transaction ID does not exist, the API returns a 404 Not Found error.
-
-
