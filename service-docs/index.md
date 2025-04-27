@@ -3,7 +3,7 @@ title: "Why Stablecraft"
 sidebarLabel: "Overview" 
 description: "The services we offer"
 sidebar_position: 1
-slug: "service-docs/service-docs"
+slug: "service-docs/index"
 ---
 Stablecraft helps you integrate modern stablecoin payment systems into your business safely, efficiently, and with full control over your assets.
 
@@ -14,9 +14,9 @@ We specialize in:
 - **Wallet Setup & Management**
   Set up custodial or non-custodial wallets for seamless stablecoin payments, ensuring your team and your customers are protected.
 - **Credential Management**
-  Generate, store, and manage API keys and credentials securely for external services.
+  Generate, store, and securely manage API keys and credentials for external services.
 - **Custom Checkout Flows**
-  Implement smart contract-based payment flows when you want full Web3 control over transactions.
+  Implement smart contract-based payment flow for full Web3 control over transactions.
 
 ## 🔗 Available Integration Guides
 
