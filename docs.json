@@ -8,15 +8,20 @@
     "pages": [
       "README",
       {
-        "group": "Service Integrations",
+        "group": "Service Docs",
         "pages": [
           "service-docs/index",
           "service-docs/how-we-work",
-          "service-docs/credential-setup",
-          "service-docs/coinbase-commerce",
-          "service-docs/stripe",
-          "service-docs/on-chain-checkout",
-          "service-docs/wallet-setup"
+          "service-docs/credential-setup"
+        ]
+      },
+      {
+        "group": "Service Integrations",
+        "pages": [
+          "service-docs/Integrations/coinbase-commerce",
+          "service-docs/Integrations/stripe",
+          "service-docs/Integrations/on-chain-checkout",
+          "service-docs/Integrations/wallet-setup"
         ]
       },
       {
@@ -54,11 +59,11 @@
       {
         "group": "Sandbox API",
         "pages": [
-          "sandbox-api/get-wallets",
-          "sandbox-api/get-wallet-by-id",
-          "sandbox-api/post-transaction",
-          "sandbox-api/get-transaction",
-          "sandbox-api/get-rates"
+          "service-docs/sandbox-api/get-wallets",
+          "service-docs/sandbox-api/get-wallet-by-id",
+          "service-docs/sandbox-api/post-transaction",
+          "service-docs/sandbox-api/get-transaction",
+          "service-docs/sandbox-api/get-rates"
         ]
       }
     ]
