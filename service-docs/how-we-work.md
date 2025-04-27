@@ -2,9 +2,6 @@
 title: "How We Work"
 sidebarLabel: "How We Work"
 ---
-
-# How We Work
-
 At Stablecraft, we do more than connect APIs — we help you build a stablecoin payment infrastructure that fits your business model.
 
 Whether you're a direct-to-consumer (D2C) brand, a SaaS company, or a decentralized application, we make it easy to:

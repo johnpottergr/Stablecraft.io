@@ -2,9 +2,6 @@
 title: "On-Chain Checkout Setup"
 sidebarLabel: "On-Chain Checkout"
 ---
-
-# On-Chain Checkout Setup
-
 We offer on-chain checkout integration if you prefer full Web3 control over your payments.
 
 An on-chain checkout flow allows customers to send stablecoins (**USDC**, **DAI**, or **USDT**) directly to a smart contract or wallet address you control, without relying on third-party payment processors like Coinbase Commerce or Stripe.

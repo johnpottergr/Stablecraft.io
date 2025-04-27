@@ -1,10 +1,7 @@
 ---
-title: "Stripe Crypto Integration"
+title: "Stripe Crypto Integration (Early Access)"
 sidebarLabel: "Stripe"
 ---
-
-# Stripe Crypto Integration (Early Access)
-
 Stripe has introduced limited support for stablecoin-based payments, allowing businesses to accept or make payments using **USDC** on select blockchains, including **Ethereum**, **Solana**, and **Polygon**.
 
 While Stripe's crypto features are expanding, Stablecraft can help you prepare your platform for stablecoin-enabled checkout or payout options.

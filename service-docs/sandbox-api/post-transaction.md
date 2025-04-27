@@ -1,10 +1,7 @@
 ---
-title: "Send Payment"
+title: "Send a Stablecoin Payment"
 sidebarLabel: "POST /transactions"
 ---
-
-# Send a Stablecoin Payment
-
 Create and send a stablecoin transaction from one of your wallets to a specified recipient address.
 
 ## 📄 Endpoint

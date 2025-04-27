@@ -2,9 +2,6 @@
 title: "Get Wallet by ID"
 sidebarLabel: "GET /wallets/:id"
 ---
-
-# Get Wallet by ID
-
 Retrieve detailed information about a specific wallet by providing its unique wallet ID.
 
 ## 📄 Endpoint

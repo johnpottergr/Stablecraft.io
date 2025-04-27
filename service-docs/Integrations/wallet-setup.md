@@ -2,9 +2,6 @@
 title: "Wallet Setup & Management"
 sidebarLabel: "Wallet Setup"
 ---
-
-# Wallet Setup & Management
-
 Stablecoin payments require a reliable, secure wallet infrastructure for your business and customers.
 
 At Stablecraft, we guide you through the wallet setup process based on your needs, whether you prioritize ease of use, full asset control, or enterprise-grade security.

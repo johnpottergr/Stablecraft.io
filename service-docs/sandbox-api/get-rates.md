@@ -1,10 +1,7 @@
 ---
-title: "Get Rates"
+title: "Get Stablecoin Conversion Rates"
 sidebarLabel: "GET /rates"
 ---
-
-# Get Stablecoin Conversion Rates
-
 Retrieve the latest conversion rates for supported stablecoins (e.g., USDC, USDT, DAI) relative to USD.
 
 ## 📄 Endpoint

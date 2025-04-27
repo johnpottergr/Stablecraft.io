@@ -2,9 +2,6 @@
 title: "API Credential Setup"
 sidebarLabel: "Credentials"
 ---
-
-# API Credential Setup
-
 When integrating with stablecoin services, securely managing your API keys is critical.
 
 We’ll help you create and safely store credentials for:

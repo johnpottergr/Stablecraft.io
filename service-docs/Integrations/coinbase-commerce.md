@@ -2,9 +2,6 @@
 title: "Coinbase Commerce Integration"
 sidebarLabel: "Coinbase Commerce"
 ---
-
-# Integrating Coinbase Commerce
-
 We help you connect your store or application to Coinbase Commerce to accept USDC and other stablecoins.
 
 Our integration covers everything, from setting up API credentials to configuring webhooks for real-time payment tracking.
