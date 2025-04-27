@@ -52,10 +52,12 @@ curl https://api.stripe.com/v1/payouts \
 **Note**: The destination field requires a properly whitelisted crypto address through Stripe's platform.
 
 ## ⚠️ Important Considerations
+
 - Crypto payouts are subject to compliance reviews and approval by Stripe.
 - Stablecoin checkout functionality may not be available for all businesses or regions yet.
 - Gas fees may be absorbed by the customer or business depending on configuration.
 
 ## 📚 Additional Resources
+
 [Stripe Crypto Overview](https://stripe.com/docs/crypto)
 [Stripe Payouts API Reference](https://stripe.com/docs/api/payouts)

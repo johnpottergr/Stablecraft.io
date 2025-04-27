@@ -47,6 +47,6 @@ Never hardcode API keys directly into your JavaScript, React, or server files.
 - Limit API key permissions to only what is needed.
 - Use different keys for development, staging, and production environments
 
-```
+---
 
 

@@ -41,3 +41,4 @@ Each guide walks you through authentication, setup, example requests, and best p
 Want to experiment with a fictional stablecoin payment API?
 Check out our [Sandbox API Reference](../sandbox-api/get-wallets) for example endpoints, authentication methods, and sample requests.
 
+---

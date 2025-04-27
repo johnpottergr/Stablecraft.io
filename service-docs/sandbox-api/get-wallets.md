@@ -16,12 +16,14 @@ GET /wallets
 ```
 
 ## 🔐 Authentication
+
 Include your API key as a Bearer token in the request header:
 
 ```http
 Authorization: Bearer YOUR_API_KEY
 ```
 ## 📥 Sample Request
+
 ```bash
 curl https://api.stablecraft.io/v1/wallets \
   -H "Authorization: Bearer YOUR_API_KEY"

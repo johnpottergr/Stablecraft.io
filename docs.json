@@ -4,7 +4,32 @@
     "colors": {
       "primary": "#2AB673"
     },
-    "navigation": {
-      "pages": ["README"]
-    }
+  "navigation": {
+    "pages": [
+      "README",
+      {
+        "group": "Service Integrations",
+        "pages": [
+          "service-docs/index",
+          "service-docs/how-we-work",
+          "service-docs/credential-setup",
+          "service-docs/coinbase-commerce",
+          "service-docs/stripe",
+          "service-docs/on-chain-checkout",
+          "service-docs/wallet-setup"
+        ]
+      },
+      {
+        "group": "Sandbox API",
+        "pages": [
+          "sandbox-api/get-wallets",
+          "sandbox-api/get-wallet-by-id",
+          "sandbox-api/post-transaction",
+          "sandbox-api/get-transaction",
+          "sandbox-api/get-rates"
+        ]
+      }
+    ]
+  }
 }
+
