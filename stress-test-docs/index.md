@@ -1,5 +1,5 @@
 ---
-title: "Stablecoin Stress Test API"
+title: "Stress Test Docs"
 description: "API documentation for calculating dynamic risk scores for stablecoins based on peg deviation, liquidity, volume, collateral quality, and other adjustable risk factors."
 sidebar_position: "1" 
 slug: "/stress-test-docs"
