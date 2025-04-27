@@ -2,18 +2,16 @@
 title: "List Wallets"
 sidebarLabel: "GET /wallets"
 sidebar_position: 4
-slug: /list-wallets
+slug: "/list-wallets"
 ---
 Retrieve all wallets associated with your Stablecraft account, along with their balances and asset types.
 
 ## 📄 Endpoint
-
 ```http
 GET /wallets
 ```
 
 ## 🔐 Authentication
-
 Include your API key as a Bearer token in the request header:
 
 ```http
@@ -21,7 +19,6 @@ Authorization: Bearer YOUR_API_KEY
 ```
 
 ## 📥 Sample Request
-
 ```bash
 curl https://api.stablecraft.io/v1/wallets \
   -H "Authorization: Bearer YOUR_API_KEY"
@@ -40,7 +37,6 @@ fetch('https://api.stablecraft.io/v1/wallets', {
 ```
 
 ## 📤 Sample Response
-
 ```json
 [
   {
