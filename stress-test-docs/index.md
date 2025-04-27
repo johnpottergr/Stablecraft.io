@@ -6,6 +6,7 @@ slug: "/stress-test-docs"
 ---
 The Stablecoin Stress Test API dynamically calculates risk scores for major stablecoins based on real-time (or simulated) data and customizable risk factor weights.
 
+
 Use this API to monitor stablecoin stability, detect emerging risks, and fine-tune assessment models based on your own risk preferences.
 
 ## Risk Factors
