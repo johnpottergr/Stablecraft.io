@@ -5,7 +5,7 @@ description: "What we offer and what our documentation covers"
 sidebar_position: 2
 slug: /how-we-work
 ---
-At Stablecraft, we do more than connect APIs — we help you build a stablecoin payment infrastructure that fits your business model.
+Stablecraft does more than just connect APIs — we bring the right tools together to build a stablecoin payment system that fits the way you do business.
 
 Whether you're a direct-to-consumer (D2C) brand, a SaaS company, or a decentralized application, we make it easy to:
 
