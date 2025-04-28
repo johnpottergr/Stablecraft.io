@@ -4,6 +4,17 @@
     "colors": {
       "primary": "#2AB673"
       },
+
+  "logo": {
+    "light": "/img/green.png", 
+    "href": "/" 
+  },
+
+
+
+
+
+  
         "themeConfig": {
     "customCss": [
       "/custom.css"
