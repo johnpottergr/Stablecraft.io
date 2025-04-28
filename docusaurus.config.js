@@ -99,6 +99,8 @@
             { href: '/stablecoin-stress-test', label: 'Stress Test', position: 'left'},
             { href: '/risk-manager', label: 'Risk Manager', position: 'left'},
             { to: '/blog', label: 'Updates & Blog', position: 'left' },
+            { href: 'https://docs.stablecraft.io', label: 'Docs', position: 'right' }, // Link to docs subdomain
+
           ],
         },
 
