@@ -127,15 +127,23 @@
 /* custom.css */
 .blogPostTitle {
   color: white;
+  margin-top: 12rem;
+  padding-top: 4rem;
+  margin-bottom: 17rem;
 }
 /* Add spacing above the blog post title */
 article .markdown h1 {
   margin-top: 2rem; /* Adjust as needed */
+
+}
+article .markdown h2 {
+  margin-top: 12rem; /* Adjust as needed */
+padding-top: 10rem;
 }
 .centered-content {
   max-width: 900px;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 2rem 1rem;
 }
 
 

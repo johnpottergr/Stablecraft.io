@@ -5,9 +5,6 @@ date: 2025-04-20
 
 Stablecoins are often marketed as 24/7 money—programmable dollars that never sleep. But behind the scenes, most stablecoins are still tethered to the limitations of traditional finance. One of the most overlooked constraints is banking hours. The global banking system doesn’t run on weekends or holidays, and that gap quietly introduces friction into stablecoin minting, redemption, and liquidity management.
 
-<!-- truncate -->
-
-
 At the surface, stablecoins like USDC, USDT, and FDUSD appear to be always-on financial instruments. You can send them between wallets at any time, use them in DeFi protocols, and settle trades instantly. But the fiat reserves backing these tokens sit in bank accounts, and issuers rely on traditional rails to handle redemptions. When banks close, so does the pathway between stablecoins and fiat.
 
 ## When redemption pauses, risk increases
