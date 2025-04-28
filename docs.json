@@ -7,7 +7,7 @@
         "customCss": [
             "/custom.css"
         ]
-    },
+    }
     "navigation": {
         "pages": [
             "README",
