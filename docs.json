@@ -27,7 +27,7 @@
             {
                 "group": "Service Docs",
                 "pages": [
-                    "service-docs/index",
+                    "service-docs/service-docs",
                     "service-docs/how-we-work",
                     "service-docs/credential-setup"
                 ]
