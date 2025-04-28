@@ -5,10 +5,12 @@
       "primary": "#2AB673"
       },
 
-  "logo": {
-    "light": "/img/green.png", 
-    "href": "/" 
-  },
+"logo": {
+  "light": "https://docs.stablecraft.io/static/img/green.png", 
+  "dark": "https://docs.stablecraft.io/static/img/green.png",
+  "href": "https://docs.stablecraft.io/"
+}
+
 
 
 
