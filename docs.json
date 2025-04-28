@@ -6,8 +6,8 @@
       },
 
 "logo": {
-  "light": "https://docs.stablecraft.io/static/img/green.png", 
-  "dark": "https://docs.stablecraft.io/static/img/green.png",
+  "light": "https://stablecraft.io/img/blackgreen.png", 
+  "dark": "https://stablecraft.io/img/blackgreen.png",
   "href": "https://docs.stablecraft.io/"
 },
 
