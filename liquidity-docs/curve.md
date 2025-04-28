@@ -12,11 +12,11 @@ https://api.curve.fi/api/getPools/ethereum/main
 - None required
 
 ## Query Example (GET request):
-```bash
+```
 GET https://api.curve.fi/api/getPools/ethereum/main
 ```
 
-```markdown
+```
 Important Fields:
 - reserveUSD: Pool liquidity
 - crvApy: Curve yield APR
