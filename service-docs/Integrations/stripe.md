@@ -2,7 +2,7 @@
 title: "Stripe Crypto Integration (Early Access)"
 sidebarLabel: "Stripe"
 description: "Possible Stripe setup for stablecoin-enabled checkout and payout options"
-sidebar_position: 3
+sidebar_position: 6
 slug: /stripe-integration
 ---
 Stripe has introduced limited support for stablecoin-based payments, allowing businesses to accept or make payments using **USDC** on select blockchains, including **Ethereum**, **Solana**, and **Polygon**.

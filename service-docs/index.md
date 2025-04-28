@@ -1,5 +1,5 @@
 ---
-title: "Service Integrations"
+title: "Service Docs"
 sidebarLabel: "Overview" 
 description: "Overview of payment integration options"
 sidebar_position: 1
