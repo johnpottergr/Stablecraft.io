@@ -1,0 +1,17 @@
+ /* Only affect code blocks */
+pre code {
+  color: #FFFFFF; /* white text */
+  background-color: #1A1A1A; /* dark gray/black background for code */
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+/* Also style inline code if you want */
+code {
+  color: #C7254E;
+  background-color: #F9F2F4;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
