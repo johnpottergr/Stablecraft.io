@@ -4,10 +4,11 @@
     "colors": {
       "primary": "#2AB673"
       },
-        "customCss": [
-            "/custom.css"
-        ]
-    }
+        "themeConfig": {
+    "customCss": [
+      "/custom.css"
+    ]
+  },
     "navigation": {
         "pages": [
             "README",
@@ -73,3 +74,5 @@
         ]
     }
 }
+
+
