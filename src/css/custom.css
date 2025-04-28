@@ -150,8 +150,11 @@ pre {
 }
 
 pre code {
-  background: none; /* prevent double background */
-  color: inherit;   /* inherit from pre */
+  background: none !important; /* force it */
+  color: inherit;
   font-size: 0.95rem;
+  padding: 0; /* remove inner padding */
+  display: block; /* stretch full width */
 }
+
 
