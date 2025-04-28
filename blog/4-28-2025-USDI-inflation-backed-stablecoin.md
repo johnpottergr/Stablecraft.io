@@ -1,4 +1,10 @@
+---
+title: USDi - The Inflation-Linked Stablecoin That Could Redefine the Market
+date: 2025-04-28
+---
 USDi is a unique, new stablecoin that’s generating news in the crypto space. While a dollar-pegged stablecoin holds its nominal value, its real-world purchasing power erodes as prices rise. Enter USDi, a stablecoin launched in early 2025 that’s tied not to the dollar but to the U.S. Consumer Price Index (CPI), which tracks inflation.
+
+<!-- truncate -->
 
 Recall that the CPI measures the cost of a basket of goods and services—think groceries, rent, gas. If inflation rises by, say, 3% annually, USDi’s value adjusts upward to reflect that. Unlike USDT or USDC, which stay fixed at $1 regardless of what that dollar can buy, USDi aims to preserve your ability to purchase the same amount of goods over time. It’s a subtle but powerful shift, addressing a gap that traditional stablecoins ignore.
 

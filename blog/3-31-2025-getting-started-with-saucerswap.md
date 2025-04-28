@@ -2,11 +2,9 @@
 title: How Stablecoin Settlement Delays Impact Perceived Stability
 date: 2025-03-31
 ---
-
 Most users assume a stablecoin transaction is complete once it hits the blockchain. But *finality*—the guarantee that a transaction is irreversible—isn’t instantaneous on many networks. On Ethereum, finality takes around 15 minutes. On Bitcoin, it can take hours. And on some rollups or modular blockchains, finality is probabilistic or dependent on another layer.
 
-{/* ----truncate----- */}
-
+<!-- truncate -->
 
 For stablecoins, that gap between transaction **confirmation** and **finality** introduces subtle risks to payment, custody, and financial settlement. If a high-value stablecoin transfer is reversed due to a chain reorg or censorship event, the perceived “stability” of the token is undermined, regardless of its 1:1 peg.
 

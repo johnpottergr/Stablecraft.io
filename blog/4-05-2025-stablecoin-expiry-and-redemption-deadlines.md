@@ -5,7 +5,7 @@ date: 2025-04-05
 
 Stablecoins are typically viewed as perpetual assets—stable by name and indefinite by nature. But that assumption introduces blind spots. What happens if a stablecoin is held for ten or twenty years? Will it still be redeemable 1:1? Does the issuer still have the obligation—or even the operational ability—to honor that redemption?
 
-{/* ----truncate----- */}
+<!-- truncate -->
 
 
 As stablecoins become embedded in long-term holdings, from DAO treasuries to tokenized bonds to intergenerational wallets, the lack of formal expiry or redemption policies starts to matter. A well-designed stablecoin should account not just for price stability today, but for accountability over time.
